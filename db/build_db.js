@@ -1,11 +1,10 @@
 const sqlite3 = require('sqlite3').verbose();
-const { build_prod_table, insert_prod_data } = require('./build_products');
-
+const {build_train_table, insert_training_data } = require('./build_training');
 
 
 const db = new sqlite3.Database("squirrely_ducks.sqlite", err => {
-  build_prod_table()
+  build_train_table()
     .then(() => {
-      insert_prod_data();
+      insert_training_data();      
     });
 });
