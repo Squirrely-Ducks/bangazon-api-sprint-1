@@ -28,6 +28,8 @@ module.exports.build_prod_table = () => {
 //insert data into table
 module.exports.insert_prod_data = () => {
   return new Promise((resolve, reject) => {
+    const db = new sqlite3.Database("squirrely_ducks.sqlite", err => {
+
       prodData.forEach(({ title, price, description, type_id, seller_id }) => {
         db.run(`INSERT INTO product VALUES (
           ${null},
@@ -37,7 +39,8 @@ module.exports.insert_prod_data = () => {
           ${type_id},
           ${seller_id}
         )`);
-    });
+      });
+    })
     resolve();
   });
 };
