@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const { readFileSync } = require("fs");
 
 //get created products data from data folder
-const prodData = JSON.parse(readFileSync("../data/products.json"));
+const prodData = JSON.parse(readFileSync("../data/product_data/products.json"));
 
 //build products table
 
@@ -21,8 +21,9 @@ module.exports.build_prod_table = () => {
       seller_id INTEGER,
       FOREIGN KEY (type_id) REFERENCES prod_types(type_id)
       FOREIGN KEY (seller_id) REFERENCES customers(customer_id)
-    )`);
-    resolve();
+    )`, () => {
+      resolve();
+    });
   });
 }
 
