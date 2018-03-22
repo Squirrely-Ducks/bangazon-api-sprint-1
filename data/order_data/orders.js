@@ -7,7 +7,7 @@ module.exports.order_gen = () => {
 
   let orders = [];
 
-  for (let i = 0; i < 300; i++) {
+  for (let i = 0; i < 20; i++) {
     let customer_id = Math.floor(Math.random() * 500) + 1;
     let payment_type_id = Math.floor(Math.random() * 5) + 1;
     let product_id = Math.floor(Math.random() * 35) + 1;

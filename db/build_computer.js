@@ -2,10 +2,10 @@ const sqlite3 = require('sqlite3').verbose();
 const { readFileSync } = require("fs");
 
 // get created computer data from data folder
-const computer_data = JSON.parse(readFileSync("../data/computer.json"));
+const computer_data = JSON.parse(readFileSync("./data/computer.json"));
 
 //build products table
-const db = new sqlite3.Database("squirrely_ducks.sqlite");
+const db = new sqlite3.Database("db/squirrely_ducks.sqlite");
 
 // method to create tables for computer
 module.exports.build_computer_table = () => {
