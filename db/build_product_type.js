@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('squirrely_ducks.sqlite');
+const db = new sqlite3.Database('db/squirrely_ducks.sqlite');
 const { readFileSync } = require('fs');
 const product_type_data = JSON.parse(readFileSync('./data/product_type.json'));
 

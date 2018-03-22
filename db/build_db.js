@@ -39,10 +39,13 @@ build_prod_table()
     return insert_training_data();
   }).then(()=>{
     return build_order_table(); 
-  }).then(()=>{
+  })
+  .then(()=>{
     return insert_order_data();
-  }).then(()=>{
+  })
+  .then(()=>{
     return build_payment_type_table();
-  }).then(()=>{
+  })
+  .then(()=>{
     return insert_payment_type_data();
   })
