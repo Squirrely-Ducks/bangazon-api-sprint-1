@@ -5,6 +5,6 @@ const { order_gen } = require('./orders');
 
 module.exports.execute_order_data =()=>{
     let orders = order_gen();
-    let orderStream = createWriteStream(`./data/orders.json`);
+    let orderStream = createWriteStream(`./data/json/orders.json`);
     orderStream.write(JSON.stringify(orders));   
 }

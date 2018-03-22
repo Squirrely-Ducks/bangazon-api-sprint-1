@@ -1,7 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('db/squirrely_ducks.sqlite');
 const { readFileSync } = require('fs');
-const product_type_data = JSON.parse(readFileSync('./data/product_type.json'));
+const product_type_data = JSON.parse(readFileSync('./data/json/product_type.json'));
 
 module.exports.build_prod_type_table = () => {
     return new Promise((resolve, reject) => {
