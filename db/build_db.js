@@ -52,7 +52,7 @@ build_prod_table()
     return insert_payment_type_data();
   })
   .then(() => {
-    build_computer_table()
+    return build_computer_table()
   })
   .then(() => {
     return insert_computer();
