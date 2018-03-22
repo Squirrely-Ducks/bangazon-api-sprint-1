@@ -14,4 +14,6 @@ execute_cust_data();
 execute_employee_data();
 execute_prod_type_data();
 execute_train_data();
+execute_order_data();
+execute_payment_type_data();
 
