@@ -6,7 +6,7 @@ module.exports.generateProducts = () => {
   let products = [];
   
   for (let i = 0; i < 20; i++) {
-    let title = faker.commerce.product();
+    let title = faker.commerce.productName();
     let price = faker.commerce.price();
     let description = faker.company.bs();
     let type_id = Math.floor(Math.random() * 10) + 1;
