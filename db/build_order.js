@@ -28,7 +28,7 @@ module.exports.build_order_table = ()=> {
 //insert data into table
 module.exports.insert_order_data = () => {
   return new Promise((resolve, reject) => {
-    order_data.forEach(({customer_id, payment_type_id, order_date, completed}) => {
+    order_data.forEach(({customer_id, payment_type_id, product_id,order_date, completed}) => {
       db.run(
         `INSERT INTO orders 
         VALUES (${null}, 
