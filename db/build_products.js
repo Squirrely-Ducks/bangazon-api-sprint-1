@@ -6,7 +6,7 @@ const prodData = JSON.parse(readFileSync("./data/products.json"));
 
 //build products table
 
-const db = new sqlite3.Database("squirrely_ducks.sqlite");
+const db = new sqlite3.Database("db/squirrely_ducks.sqlite");
 
 module.exports.build_prod_table = () => {
   return new Promise((resolve, reject) => {

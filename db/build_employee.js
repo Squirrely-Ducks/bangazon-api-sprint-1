@@ -1,5 +1,5 @@
 const sqlite3 = require('sqlite3').verbose();
-const db = new sqlite3.Database('squirrely_ducks.sqlite');
+const db = new sqlite3.Database('db/squirrely_ducks.sqlite');
 const { readFileSync } = require('fs');
 const employee_data = JSON.parse(readFileSync('./data/employee.json'));
 

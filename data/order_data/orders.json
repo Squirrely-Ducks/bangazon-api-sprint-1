@@ -1,0 +1,1801 @@
+[{
+    "customer_id": 72,
+    "payment_type_id": 4,
+    "product_id": 35,
+    "order_date": "2018-02-19T08:47:12.401Z",
+    "completed": 1
+}, {
+    "customer_id": 464,
+    "payment_type_id": 5,
+    "product_id": 29,
+    "order_date": "2017-07-18T23:29:16.001Z",
+    "completed": 0
+}, {
+    "customer_id": 14,
+    "payment_type_id": 5,
+    "product_id": 32,
+    "order_date": "2017-10-31T22:18:27.309Z",
+    "completed": 0
+}, {
+    "customer_id": 238,
+    "payment_type_id": 4,
+    "product_id": 15,
+    "order_date": "2017-06-07T09:27:08.866Z",
+    "completed": 0
+}, {
+    "customer_id": 63,
+    "payment_type_id": 4,
+    "product_id": 30,
+    "order_date": "2018-02-23T11:10:21.744Z",
+    "completed": 1
+}, {
+    "customer_id": 78,
+    "payment_type_id": 4,
+    "product_id": 30,
+    "order_date": "2017-09-09T12:28:36.765Z",
+    "completed": 1
+}, {
+    "customer_id": 287,
+    "payment_type_id": 4,
+    "product_id": 33,
+    "order_date": "2017-06-06T11:04:36.843Z",
+    "completed": 1
+}, {
+    "customer_id": 339,
+    "payment_type_id": 1,
+    "product_id": 3,
+    "order_date": "2018-02-13T13:54:31.616Z",
+    "completed": 0
+}, {
+    "customer_id": 241,
+    "payment_type_id": 5,
+    "product_id": 4,
+    "order_date": "2017-11-10T18:28:26.493Z",
+    "completed": 1
+}, {
+    "customer_id": 447,
+    "payment_type_id": 1,
+    "product_id": 30,
+    "order_date": "2017-07-26T19:07:43.858Z",
+    "completed": 1
+}, {
+    "customer_id": 441,
+    "payment_type_id": 4,
+    "product_id": 33,
+    "order_date": "2017-08-23T17:32:43.566Z",
+    "completed": 1
+}, {
+    "customer_id": 50,
+    "payment_type_id": 4,
+    "product_id": 21,
+    "order_date": "2017-10-15T10:25:40.187Z",
+    "completed": 1
+}, {
+    "customer_id": 346,
+    "payment_type_id": 3,
+    "product_id": 24,
+    "order_date": "2018-01-05T09:29:17.605Z",
+    "completed": 0
+}, {
+    "customer_id": 138,
+    "payment_type_id": 4,
+    "product_id": 20,
+    "order_date": "2017-11-11T22:56:32.437Z",
+    "completed": 0
+}, {
+    "customer_id": 115,
+    "payment_type_id": 4,
+    "product_id": 26,
+    "order_date": "2017-12-16T00:32:30.490Z",
+    "completed": 1
+}, {
+    "customer_id": 419,
+    "payment_type_id": 2,
+    "product_id": 4,
+    "order_date": "2018-03-02T12:21:37.773Z",
+    "completed": 0
+}, {
+    "customer_id": 417,
+    "payment_type_id": 5,
+    "product_id": 7,
+    "order_date": "2017-10-30T07:52:28.594Z",
+    "completed": 1
+}, {
+    "customer_id": 89,
+    "payment_type_id": 4,
+    "product_id": 5,
+    "order_date": "2018-02-28T23:34:20.845Z",
+    "completed": 1
+}, {
+    "customer_id": 124,
+    "payment_type_id": 2,
+    "product_id": 33,
+    "order_date": "2017-11-23T03:24:35.740Z",
+    "completed": 0
+}, {
+    "customer_id": 383,
+    "payment_type_id": 2,
+    "product_id": 28,
+    "order_date": "2017-09-04T03:15:47.260Z",
+    "completed": 1
+}, {
+    "customer_id": 332,
+    "payment_type_id": 4,
+    "product_id": 11,
+    "order_date": "2017-07-12T06:10:15.009Z",
+    "completed": 1
+}, {
+    "customer_id": 10,
+    "payment_type_id": 1,
+    "product_id": 32,
+    "order_date": "2017-12-05T16:45:49.311Z",
+    "completed": 0
+}, {
+    "customer_id": 143,
+    "payment_type_id": 4,
+    "product_id": 13,
+    "order_date": "2018-02-14T02:41:15.354Z",
+    "completed": 1
+}, {
+    "customer_id": 70,
+    "payment_type_id": 4,
+    "product_id": 34,
+    "order_date": "2017-04-18T05:52:09.130Z",
+    "completed": 1
+}, {
+    "customer_id": 103,
+    "payment_type_id": 4,
+    "product_id": 31,
+    "order_date": "2017-05-12T04:51:23.875Z",
+    "completed": 0
+}, {
+    "customer_id": 294,
+    "payment_type_id": 5,
+    "product_id": 7,
+    "order_date": "2017-12-05T18:16:05.049Z",
+    "completed": 1
+}, {
+    "customer_id": 437,
+    "payment_type_id": 3,
+    "product_id": 25,
+    "order_date": "2018-02-16T10:33:09.469Z",
+    "completed": 0
+}, {
+    "customer_id": 29,
+    "payment_type_id": 2,
+    "product_id": 20,
+    "order_date": "2017-11-22T21:45:46.275Z",
+    "completed": 0
+}, {
+    "customer_id": 116,
+    "payment_type_id": 4,
+    "product_id": 17,
+    "order_date": "2017-04-22T11:40:01.372Z",
+    "completed": 0
+}, {
+    "customer_id": 170,
+    "payment_type_id": 4,
+    "product_id": 17,
+    "order_date": "2017-08-30T12:58:12.912Z",
+    "completed": 0
+}, {
+    "customer_id": 440,
+    "payment_type_id": 3,
+    "product_id": 29,
+    "order_date": "2017-05-18T10:43:58.501Z",
+    "completed": 0
+}, {
+    "customer_id": 316,
+    "payment_type_id": 5,
+    "product_id": 5,
+    "order_date": "2018-02-26T04:12:41.505Z",
+    "completed": 0
+}, {
+    "customer_id": 336,
+    "payment_type_id": 4,
+    "product_id": 35,
+    "order_date": "2017-10-27T08:59:31.679Z",
+    "completed": 0
+}, {
+    "customer_id": 17,
+    "payment_type_id": 5,
+    "product_id": 25,
+    "order_date": "2018-02-20T08:33:21.646Z",
+    "completed": 0
+}, {
+    "customer_id": 262,
+    "payment_type_id": 2,
+    "product_id": 17,
+    "order_date": "2017-10-13T10:07:37.495Z",
+    "completed": 1
+}, {
+    "customer_id": 145,
+    "payment_type_id": 4,
+    "product_id": 23,
+    "order_date": "2017-03-24T19:05:48.340Z",
+    "completed": 1
+}, {
+    "customer_id": 352,
+    "payment_type_id": 2,
+    "product_id": 20,
+    "order_date": "2018-01-13T08:34:34.896Z",
+    "completed": 1
+}, {
+    "customer_id": 13,
+    "payment_type_id": 1,
+    "product_id": 13,
+    "order_date": "2017-10-03T21:26:50.430Z",
+    "completed": 0
+}, {
+    "customer_id": 277,
+    "payment_type_id": 5,
+    "product_id": 26,
+    "order_date": "2017-04-18T13:15:10.817Z",
+    "completed": 1
+}, {
+    "customer_id": 352,
+    "payment_type_id": 5,
+    "product_id": 5,
+    "order_date": "2017-08-10T10:49:13.366Z",
+    "completed": 0
+}, {
+    "customer_id": 118,
+    "payment_type_id": 3,
+    "product_id": 9,
+    "order_date": "2017-07-11T08:45:41.598Z",
+    "completed": 1
+}, {
+    "customer_id": 499,
+    "payment_type_id": 5,
+    "product_id": 7,
+    "order_date": "2017-03-28T22:51:47.405Z",
+    "completed": 0
+}, {
+    "customer_id": 7,
+    "payment_type_id": 2,
+    "product_id": 22,
+    "order_date": "2017-08-05T02:27:46.196Z",
+    "completed": 1
+}, {
+    "customer_id": 473,
+    "payment_type_id": 3,
+    "product_id": 19,
+    "order_date": "2017-10-19T03:16:42.439Z",
+    "completed": 0
+}, {
+    "customer_id": 234,
+    "payment_type_id": 1,
+    "product_id": 13,
+    "order_date": "2017-05-16T09:55:26.692Z",
+    "completed": 0
+}, {
+    "customer_id": 151,
+    "payment_type_id": 2,
+    "product_id": 32,
+    "order_date": "2017-04-20T16:34:47.772Z",
+    "completed": 0
+}, {
+    "customer_id": 36,
+    "payment_type_id": 5,
+    "product_id": 9,
+    "order_date": "2018-02-26T23:40:26.242Z",
+    "completed": 1
+}, {
+    "customer_id": 211,
+    "payment_type_id": 5,
+    "product_id": 10,
+    "order_date": "2017-11-20T06:49:08.822Z",
+    "completed": 1
+}, {
+    "customer_id": 366,
+    "payment_type_id": 3,
+    "product_id": 32,
+    "order_date": "2017-04-21T16:35:35.376Z",
+    "completed": 0
+}, {
+    "customer_id": 116,
+    "payment_type_id": 2,
+    "product_id": 20,
+    "order_date": "2017-09-27T20:09:05.754Z",
+    "completed": 0
+}, {
+    "customer_id": 75,
+    "payment_type_id": 2,
+    "product_id": 33,
+    "order_date": "2017-09-22T03:01:46.058Z",
+    "completed": 1
+}, {
+    "customer_id": 233,
+    "payment_type_id": 2,
+    "product_id": 10,
+    "order_date": "2017-05-17T10:51:34.486Z",
+    "completed": 1
+}, {
+    "customer_id": 49,
+    "payment_type_id": 2,
+    "product_id": 33,
+    "order_date": "2017-08-25T11:02:57.565Z",
+    "completed": 1
+}, {
+    "customer_id": 151,
+    "payment_type_id": 2,
+    "product_id": 35,
+    "order_date": "2018-02-18T20:48:26.266Z",
+    "completed": 0
+}, {
+    "customer_id": 403,
+    "payment_type_id": 5,
+    "product_id": 27,
+    "order_date": "2017-11-22T07:13:31.940Z",
+    "completed": 0
+}, {
+    "customer_id": 236,
+    "payment_type_id": 3,
+    "product_id": 1,
+    "order_date": "2017-06-18T10:05:29.429Z",
+    "completed": 1
+}, {
+    "customer_id": 188,
+    "payment_type_id": 5,
+    "product_id": 6,
+    "order_date": "2017-03-22T11:59:48.275Z",
+    "completed": 1
+}, {
+    "customer_id": 73,
+    "payment_type_id": 1,
+    "product_id": 33,
+    "order_date": "2017-10-16T02:19:16.237Z",
+    "completed": 0
+}, {
+    "customer_id": 378,
+    "payment_type_id": 2,
+    "product_id": 5,
+    "order_date": "2017-11-12T06:49:33.277Z",
+    "completed": 0
+}, {
+    "customer_id": 320,
+    "payment_type_id": 2,
+    "product_id": 18,
+    "order_date": "2018-01-19T05:39:11.395Z",
+    "completed": 0
+}, {
+    "customer_id": 230,
+    "payment_type_id": 4,
+    "product_id": 23,
+    "order_date": "2017-05-26T16:50:05.607Z",
+    "completed": 1
+}, {
+    "customer_id": 140,
+    "payment_type_id": 4,
+    "product_id": 18,
+    "order_date": "2017-09-16T07:39:37.760Z",
+    "completed": 1
+}, {
+    "customer_id": 456,
+    "payment_type_id": 4,
+    "product_id": 2,
+    "order_date": "2017-05-17T13:02:16.928Z",
+    "completed": 0
+}, {
+    "customer_id": 470,
+    "payment_type_id": 3,
+    "product_id": 25,
+    "order_date": "2017-12-10T14:32:59.912Z",
+    "completed": 1
+}, {
+    "customer_id": 126,
+    "payment_type_id": 1,
+    "product_id": 21,
+    "order_date": "2017-10-31T19:42:44.556Z",
+    "completed": 1
+}, {
+    "customer_id": 389,
+    "payment_type_id": 4,
+    "product_id": 1,
+    "order_date": "2017-10-03T21:05:51.741Z",
+    "completed": 1
+}, {
+    "customer_id": 107,
+    "payment_type_id": 3,
+    "product_id": 6,
+    "order_date": "2017-11-04T14:15:15.931Z",
+    "completed": 1
+}, {
+    "customer_id": 35,
+    "payment_type_id": 4,
+    "product_id": 26,
+    "order_date": "2017-04-24T16:16:19.189Z",
+    "completed": 0
+}, {
+    "customer_id": 14,
+    "payment_type_id": 2,
+    "product_id": 13,
+    "order_date": "2018-02-22T11:50:18.078Z",
+    "completed": 1
+}, {
+    "customer_id": 220,
+    "payment_type_id": 4,
+    "product_id": 8,
+    "order_date": "2018-01-28T08:50:55.983Z",
+    "completed": 0
+}, {
+    "customer_id": 213,
+    "payment_type_id": 3,
+    "product_id": 7,
+    "order_date": "2017-06-22T09:26:16.923Z",
+    "completed": 1
+}, {
+    "customer_id": 211,
+    "payment_type_id": 1,
+    "product_id": 18,
+    "order_date": "2017-07-25T05:19:00.097Z",
+    "completed": 0
+}, {
+    "customer_id": 163,
+    "payment_type_id": 5,
+    "product_id": 30,
+    "order_date": "2017-06-13T07:41:15.984Z",
+    "completed": 0
+}, {
+    "customer_id": 335,
+    "payment_type_id": 3,
+    "product_id": 10,
+    "order_date": "2017-11-18T05:10:13.998Z",
+    "completed": 1
+}, {
+    "customer_id": 5,
+    "payment_type_id": 3,
+    "product_id": 9,
+    "order_date": "2017-04-02T21:03:29.482Z",
+    "completed": 0
+}, {
+    "customer_id": 354,
+    "payment_type_id": 1,
+    "product_id": 9,
+    "order_date": "2017-12-21T13:53:53.384Z",
+    "completed": 1
+}, {
+    "customer_id": 277,
+    "payment_type_id": 4,
+    "product_id": 6,
+    "order_date": "2017-06-15T02:12:27.504Z",
+    "completed": 1
+}, {
+    "customer_id": 443,
+    "payment_type_id": 3,
+    "product_id": 21,
+    "order_date": "2018-02-15T18:53:19.859Z",
+    "completed": 1
+}, {
+    "customer_id": 485,
+    "payment_type_id": 1,
+    "product_id": 19,
+    "order_date": "2018-02-07T07:16:05.429Z",
+    "completed": 0
+}, {
+    "customer_id": 327,
+    "payment_type_id": 4,
+    "product_id": 11,
+    "order_date": "2018-02-19T20:50:55.131Z",
+    "completed": 1
+}, {
+    "customer_id": 120,
+    "payment_type_id": 5,
+    "product_id": 2,
+    "order_date": "2017-09-20T14:01:02.573Z",
+    "completed": 1
+}, {
+    "customer_id": 350,
+    "payment_type_id": 2,
+    "product_id": 33,
+    "order_date": "2017-07-05T00:26:20.886Z",
+    "completed": 0
+}, {
+    "customer_id": 166,
+    "payment_type_id": 4,
+    "product_id": 7,
+    "order_date": "2018-01-12T03:38:55.278Z",
+    "completed": 1
+}, {
+    "customer_id": 14,
+    "payment_type_id": 2,
+    "product_id": 33,
+    "order_date": "2017-08-01T07:38:22.371Z",
+    "completed": 1
+}, {
+    "customer_id": 350,
+    "payment_type_id": 5,
+    "product_id": 17,
+    "order_date": "2017-10-18T21:58:35.694Z",
+    "completed": 1
+}, {
+    "customer_id": 141,
+    "payment_type_id": 4,
+    "product_id": 18,
+    "order_date": "2017-12-01T18:01:02.097Z",
+    "completed": 0
+}, {
+    "customer_id": 100,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2017-08-28T04:00:39.858Z",
+    "completed": 0
+}, {
+    "customer_id": 391,
+    "payment_type_id": 1,
+    "product_id": 16,
+    "order_date": "2017-03-29T08:18:46.292Z",
+    "completed": 1
+}, {
+    "customer_id": 135,
+    "payment_type_id": 2,
+    "product_id": 23,
+    "order_date": "2017-11-30T04:18:54.620Z",
+    "completed": 0
+}, {
+    "customer_id": 493,
+    "payment_type_id": 3,
+    "product_id": 31,
+    "order_date": "2017-10-23T17:07:31.765Z",
+    "completed": 0
+}, {
+    "customer_id": 325,
+    "payment_type_id": 5,
+    "product_id": 35,
+    "order_date": "2017-11-13T02:39:42.632Z",
+    "completed": 0
+}, {
+    "customer_id": 287,
+    "payment_type_id": 4,
+    "product_id": 5,
+    "order_date": "2017-04-29T03:12:05.434Z",
+    "completed": 1
+}, {
+    "customer_id": 212,
+    "payment_type_id": 1,
+    "product_id": 8,
+    "order_date": "2017-07-23T15:01:34.208Z",
+    "completed": 1
+}, {
+    "customer_id": 251,
+    "payment_type_id": 2,
+    "product_id": 19,
+    "order_date": "2018-01-29T04:19:57.074Z",
+    "completed": 0
+}, {
+    "customer_id": 106,
+    "payment_type_id": 1,
+    "product_id": 26,
+    "order_date": "2017-03-19T22:08:30.737Z",
+    "completed": 1
+}, {
+    "customer_id": 362,
+    "payment_type_id": 2,
+    "product_id": 29,
+    "order_date": "2017-08-23T01:16:59.623Z",
+    "completed": 1
+}, {
+    "customer_id": 432,
+    "payment_type_id": 2,
+    "product_id": 13,
+    "order_date": "2017-07-26T00:22:22.955Z",
+    "completed": 0
+}, {
+    "customer_id": 323,
+    "payment_type_id": 3,
+    "product_id": 32,
+    "order_date": "2018-02-25T10:59:44.063Z",
+    "completed": 1
+}, {
+    "customer_id": 407,
+    "payment_type_id": 1,
+    "product_id": 19,
+    "order_date": "2017-05-02T01:47:13.957Z",
+    "completed": 1
+}, {
+    "customer_id": 386,
+    "payment_type_id": 3,
+    "product_id": 21,
+    "order_date": "2017-03-26T21:08:07.499Z",
+    "completed": 0
+}, {
+    "customer_id": 279,
+    "payment_type_id": 4,
+    "product_id": 9,
+    "order_date": "2017-07-12T11:33:57.896Z",
+    "completed": 1
+}, {
+    "customer_id": 124,
+    "payment_type_id": 3,
+    "product_id": 35,
+    "order_date": "2017-11-07T07:59:41.220Z",
+    "completed": 0
+}, {
+    "customer_id": 364,
+    "payment_type_id": 1,
+    "product_id": 33,
+    "order_date": "2017-11-14T03:38:09.545Z",
+    "completed": 1
+}, {
+    "customer_id": 410,
+    "payment_type_id": 1,
+    "product_id": 32,
+    "order_date": "2017-05-24T02:23:45.861Z",
+    "completed": 1
+}, {
+    "customer_id": 462,
+    "payment_type_id": 1,
+    "product_id": 34,
+    "order_date": "2017-04-14T14:38:06.904Z",
+    "completed": 1
+}, {
+    "customer_id": 229,
+    "payment_type_id": 1,
+    "product_id": 28,
+    "order_date": "2017-06-18T19:45:48.089Z",
+    "completed": 1
+}, {
+    "customer_id": 16,
+    "payment_type_id": 2,
+    "product_id": 2,
+    "order_date": "2017-07-25T16:43:36.421Z",
+    "completed": 1
+}, {
+    "customer_id": 56,
+    "payment_type_id": 5,
+    "product_id": 22,
+    "order_date": "2017-09-27T10:03:55.721Z",
+    "completed": 0
+}, {
+    "customer_id": 380,
+    "payment_type_id": 1,
+    "product_id": 28,
+    "order_date": "2017-12-22T22:41:50.104Z",
+    "completed": 0
+}, {
+    "customer_id": 327,
+    "payment_type_id": 2,
+    "product_id": 9,
+    "order_date": "2017-09-20T19:39:34.246Z",
+    "completed": 1
+}, {
+    "customer_id": 163,
+    "payment_type_id": 3,
+    "product_id": 2,
+    "order_date": "2017-06-10T14:05:15.832Z",
+    "completed": 1
+}, {
+    "customer_id": 37,
+    "payment_type_id": 4,
+    "product_id": 33,
+    "order_date": "2017-04-29T18:29:21.437Z",
+    "completed": 1
+}, {
+    "customer_id": 199,
+    "payment_type_id": 5,
+    "product_id": 7,
+    "order_date": "2017-05-24T08:44:44.421Z",
+    "completed": 0
+}, {
+    "customer_id": 11,
+    "payment_type_id": 2,
+    "product_id": 28,
+    "order_date": "2017-10-10T00:31:03.297Z",
+    "completed": 1
+}, {
+    "customer_id": 446,
+    "payment_type_id": 2,
+    "product_id": 9,
+    "order_date": "2017-08-27T10:13:43.780Z",
+    "completed": 0
+}, {
+    "customer_id": 339,
+    "payment_type_id": 3,
+    "product_id": 9,
+    "order_date": "2017-04-28T17:36:12.471Z",
+    "completed": 1
+}, {
+    "customer_id": 119,
+    "payment_type_id": 5,
+    "product_id": 25,
+    "order_date": "2018-02-13T12:24:55.822Z",
+    "completed": 1
+}, {
+    "customer_id": 213,
+    "payment_type_id": 1,
+    "product_id": 13,
+    "order_date": "2017-12-27T04:39:14.265Z",
+    "completed": 0
+}, {
+    "customer_id": 55,
+    "payment_type_id": 2,
+    "product_id": 21,
+    "order_date": "2017-12-16T14:33:28.364Z",
+    "completed": 0
+}, {
+    "customer_id": 6,
+    "payment_type_id": 2,
+    "product_id": 26,
+    "order_date": "2017-11-27T06:46:07.984Z",
+    "completed": 0
+}, {
+    "customer_id": 148,
+    "payment_type_id": 3,
+    "product_id": 8,
+    "order_date": "2017-11-04T06:22:44.418Z",
+    "completed": 1
+}, {
+    "customer_id": 463,
+    "payment_type_id": 1,
+    "product_id": 19,
+    "order_date": "2017-07-04T02:03:07.194Z",
+    "completed": 0
+}, {
+    "customer_id": 33,
+    "payment_type_id": 1,
+    "product_id": 34,
+    "order_date": "2017-11-24T20:26:25.629Z",
+    "completed": 1
+}, {
+    "customer_id": 154,
+    "payment_type_id": 4,
+    "product_id": 13,
+    "order_date": "2017-07-10T15:45:55.558Z",
+    "completed": 1
+}, {
+    "customer_id": 340,
+    "payment_type_id": 5,
+    "product_id": 26,
+    "order_date": "2017-06-20T03:58:32.777Z",
+    "completed": 0
+}, {
+    "customer_id": 84,
+    "payment_type_id": 1,
+    "product_id": 35,
+    "order_date": "2017-07-14T06:10:07.399Z",
+    "completed": 1
+}, {
+    "customer_id": 336,
+    "payment_type_id": 1,
+    "product_id": 19,
+    "order_date": "2018-01-23T19:45:31.880Z",
+    "completed": 1
+}, {
+    "customer_id": 197,
+    "payment_type_id": 1,
+    "product_id": 17,
+    "order_date": "2017-09-16T06:58:40.261Z",
+    "completed": 1
+}, {
+    "customer_id": 393,
+    "payment_type_id": 3,
+    "product_id": 35,
+    "order_date": "2017-11-09T04:31:26.288Z",
+    "completed": 0
+}, {
+    "customer_id": 4,
+    "payment_type_id": 1,
+    "product_id": 29,
+    "order_date": "2017-08-07T09:31:54.389Z",
+    "completed": 1
+}, {
+    "customer_id": 257,
+    "payment_type_id": 3,
+    "product_id": 13,
+    "order_date": "2017-09-14T13:56:41.876Z",
+    "completed": 0
+}, {
+    "customer_id": 418,
+    "payment_type_id": 1,
+    "product_id": 34,
+    "order_date": "2017-08-05T16:29:13.139Z",
+    "completed": 1
+}, {
+    "customer_id": 53,
+    "payment_type_id": 1,
+    "product_id": 9,
+    "order_date": "2017-06-18T02:34:16.511Z",
+    "completed": 0
+}, {
+    "customer_id": 218,
+    "payment_type_id": 5,
+    "product_id": 14,
+    "order_date": "2017-09-08T15:59:33.009Z",
+    "completed": 1
+}, {
+    "customer_id": 231,
+    "payment_type_id": 4,
+    "product_id": 17,
+    "order_date": "2017-06-13T02:27:43.335Z",
+    "completed": 1
+}, {
+    "customer_id": 56,
+    "payment_type_id": 1,
+    "product_id": 35,
+    "order_date": "2017-06-13T18:05:05.727Z",
+    "completed": 0
+}, {
+    "customer_id": 69,
+    "payment_type_id": 3,
+    "product_id": 20,
+    "order_date": "2017-10-16T22:33:30.782Z",
+    "completed": 0
+}, {
+    "customer_id": 495,
+    "payment_type_id": 1,
+    "product_id": 30,
+    "order_date": "2017-09-21T19:06:27.003Z",
+    "completed": 0
+}, {
+    "customer_id": 277,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2017-08-25T14:34:31.412Z",
+    "completed": 0
+}, {
+    "customer_id": 367,
+    "payment_type_id": 1,
+    "product_id": 3,
+    "order_date": "2017-09-12T09:56:03.531Z",
+    "completed": 1
+}, {
+    "customer_id": 285,
+    "payment_type_id": 1,
+    "product_id": 7,
+    "order_date": "2017-09-08T19:22:23.413Z",
+    "completed": 1
+}, {
+    "customer_id": 361,
+    "payment_type_id": 5,
+    "product_id": 15,
+    "order_date": "2017-11-25T01:11:17.052Z",
+    "completed": 1
+}, {
+    "customer_id": 117,
+    "payment_type_id": 3,
+    "product_id": 4,
+    "order_date": "2017-09-14T16:11:00.366Z",
+    "completed": 1
+}, {
+    "customer_id": 363,
+    "payment_type_id": 2,
+    "product_id": 14,
+    "order_date": "2017-09-02T06:07:33.078Z",
+    "completed": 0
+}, {
+    "customer_id": 480,
+    "payment_type_id": 1,
+    "product_id": 32,
+    "order_date": "2017-05-18T13:07:23.137Z",
+    "completed": 0
+}, {
+    "customer_id": 222,
+    "payment_type_id": 2,
+    "product_id": 14,
+    "order_date": "2018-02-05T16:04:44.325Z",
+    "completed": 0
+}, {
+    "customer_id": 165,
+    "payment_type_id": 5,
+    "product_id": 14,
+    "order_date": "2017-09-09T12:31:03.315Z",
+    "completed": 1
+}, {
+    "customer_id": 25,
+    "payment_type_id": 2,
+    "product_id": 3,
+    "order_date": "2017-08-17T22:29:44.017Z",
+    "completed": 0
+}, {
+    "customer_id": 306,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2017-09-17T03:41:07.645Z",
+    "completed": 1
+}, {
+    "customer_id": 495,
+    "payment_type_id": 3,
+    "product_id": 2,
+    "order_date": "2017-10-18T05:57:38.246Z",
+    "completed": 1
+}, {
+    "customer_id": 349,
+    "payment_type_id": 4,
+    "product_id": 33,
+    "order_date": "2017-10-29T00:42:19.612Z",
+    "completed": 1
+}, {
+    "customer_id": 161,
+    "payment_type_id": 1,
+    "product_id": 17,
+    "order_date": "2017-08-06T23:25:41.929Z",
+    "completed": 1
+}, {
+    "customer_id": 354,
+    "payment_type_id": 4,
+    "product_id": 4,
+    "order_date": "2017-06-04T18:51:20.139Z",
+    "completed": 1
+}, {
+    "customer_id": 442,
+    "payment_type_id": 5,
+    "product_id": 13,
+    "order_date": "2018-02-16T19:37:42.012Z",
+    "completed": 1
+}, {
+    "customer_id": 158,
+    "payment_type_id": 1,
+    "product_id": 12,
+    "order_date": "2017-06-27T03:14:37.832Z",
+    "completed": 1
+}, {
+    "customer_id": 2,
+    "payment_type_id": 4,
+    "product_id": 26,
+    "order_date": "2017-09-27T19:36:56.933Z",
+    "completed": 1
+}, {
+    "customer_id": 98,
+    "payment_type_id": 5,
+    "product_id": 27,
+    "order_date": "2017-12-16T22:45:34.097Z",
+    "completed": 1
+}, {
+    "customer_id": 467,
+    "payment_type_id": 2,
+    "product_id": 35,
+    "order_date": "2017-08-18T04:12:47.306Z",
+    "completed": 1
+}, {
+    "customer_id": 258,
+    "payment_type_id": 2,
+    "product_id": 12,
+    "order_date": "2017-12-05T04:29:31.289Z",
+    "completed": 1
+}, {
+    "customer_id": 220,
+    "payment_type_id": 2,
+    "product_id": 4,
+    "order_date": "2017-04-28T04:14:04.432Z",
+    "completed": 0
+}, {
+    "customer_id": 297,
+    "payment_type_id": 1,
+    "product_id": 6,
+    "order_date": "2017-07-04T06:02:55.282Z",
+    "completed": 0
+}, {
+    "customer_id": 27,
+    "payment_type_id": 1,
+    "product_id": 24,
+    "order_date": "2017-12-23T02:08:49.406Z",
+    "completed": 0
+}, {
+    "customer_id": 351,
+    "payment_type_id": 2,
+    "product_id": 22,
+    "order_date": "2017-05-03T09:03:09.684Z",
+    "completed": 1
+}, {
+    "customer_id": 213,
+    "payment_type_id": 3,
+    "product_id": 4,
+    "order_date": "2017-03-31T02:34:11.116Z",
+    "completed": 1
+}, {
+    "customer_id": 54,
+    "payment_type_id": 3,
+    "product_id": 1,
+    "order_date": "2018-01-19T05:28:16.146Z",
+    "completed": 0
+}, {
+    "customer_id": 353,
+    "payment_type_id": 1,
+    "product_id": 15,
+    "order_date": "2018-01-14T21:17:10.737Z",
+    "completed": 0
+}, {
+    "customer_id": 215,
+    "payment_type_id": 2,
+    "product_id": 30,
+    "order_date": "2017-07-02T07:20:28.528Z",
+    "completed": 1
+}, {
+    "customer_id": 318,
+    "payment_type_id": 2,
+    "product_id": 9,
+    "order_date": "2017-05-04T15:02:34.108Z",
+    "completed": 0
+}, {
+    "customer_id": 464,
+    "payment_type_id": 5,
+    "product_id": 6,
+    "order_date": "2017-11-15T15:57:40.464Z",
+    "completed": 1
+}, {
+    "customer_id": 213,
+    "payment_type_id": 4,
+    "product_id": 8,
+    "order_date": "2018-01-18T09:03:56.105Z",
+    "completed": 1
+}, {
+    "customer_id": 401,
+    "payment_type_id": 5,
+    "product_id": 8,
+    "order_date": "2018-02-05T16:12:35.401Z",
+    "completed": 0
+}, {
+    "customer_id": 122,
+    "payment_type_id": 4,
+    "product_id": 32,
+    "order_date": "2017-05-27T10:39:37.450Z",
+    "completed": 1
+}, {
+    "customer_id": 389,
+    "payment_type_id": 5,
+    "product_id": 23,
+    "order_date": "2018-01-06T11:19:41.650Z",
+    "completed": 1
+}, {
+    "customer_id": 355,
+    "payment_type_id": 5,
+    "product_id": 3,
+    "order_date": "2017-11-15T02:57:15.066Z",
+    "completed": 1
+}, {
+    "customer_id": 109,
+    "payment_type_id": 5,
+    "product_id": 28,
+    "order_date": "2017-09-19T23:00:01.248Z",
+    "completed": 1
+}, {
+    "customer_id": 216,
+    "payment_type_id": 2,
+    "product_id": 14,
+    "order_date": "2017-09-12T23:32:47.199Z",
+    "completed": 0
+}, {
+    "customer_id": 244,
+    "payment_type_id": 1,
+    "product_id": 7,
+    "order_date": "2017-12-11T18:02:55.180Z",
+    "completed": 0
+}, {
+    "customer_id": 362,
+    "payment_type_id": 5,
+    "product_id": 31,
+    "order_date": "2018-02-16T04:56:57.619Z",
+    "completed": 1
+}, {
+    "customer_id": 21,
+    "payment_type_id": 5,
+    "product_id": 15,
+    "order_date": "2018-02-22T02:08:47.079Z",
+    "completed": 1
+}, {
+    "customer_id": 63,
+    "payment_type_id": 5,
+    "product_id": 31,
+    "order_date": "2017-12-24T17:34:46.101Z",
+    "completed": 0
+}, {
+    "customer_id": 19,
+    "payment_type_id": 4,
+    "product_id": 28,
+    "order_date": "2017-12-12T15:22:11.518Z",
+    "completed": 1
+}, {
+    "customer_id": 373,
+    "payment_type_id": 4,
+    "product_id": 11,
+    "order_date": "2018-02-27T04:20:25.123Z",
+    "completed": 1
+}, {
+    "customer_id": 165,
+    "payment_type_id": 1,
+    "product_id": 23,
+    "order_date": "2017-05-06T08:10:37.058Z",
+    "completed": 1
+}, {
+    "customer_id": 497,
+    "payment_type_id": 4,
+    "product_id": 31,
+    "order_date": "2017-04-15T21:51:53.996Z",
+    "completed": 1
+}, {
+    "customer_id": 464,
+    "payment_type_id": 3,
+    "product_id": 1,
+    "order_date": "2017-10-30T21:44:19.933Z",
+    "completed": 1
+}, {
+    "customer_id": 207,
+    "payment_type_id": 1,
+    "product_id": 14,
+    "order_date": "2017-08-04T05:41:09.635Z",
+    "completed": 1
+}, {
+    "customer_id": 433,
+    "payment_type_id": 2,
+    "product_id": 19,
+    "order_date": "2017-07-21T09:32:03.822Z",
+    "completed": 0
+}, {
+    "customer_id": 188,
+    "payment_type_id": 1,
+    "product_id": 18,
+    "order_date": "2017-08-11T03:25:09.739Z",
+    "completed": 0
+}, {
+    "customer_id": 161,
+    "payment_type_id": 5,
+    "product_id": 20,
+    "order_date": "2017-05-19T00:13:20.720Z",
+    "completed": 0
+}, {
+    "customer_id": 243,
+    "payment_type_id": 3,
+    "product_id": 19,
+    "order_date": "2017-03-04T11:23:53.145Z",
+    "completed": 1
+}, {
+    "customer_id": 149,
+    "payment_type_id": 5,
+    "product_id": 18,
+    "order_date": "2018-02-19T14:24:10.656Z",
+    "completed": 0
+}, {
+    "customer_id": 72,
+    "payment_type_id": 1,
+    "product_id": 2,
+    "order_date": "2017-09-28T05:21:23.632Z",
+    "completed": 1
+}, {
+    "customer_id": 178,
+    "payment_type_id": 4,
+    "product_id": 17,
+    "order_date": "2017-12-17T02:24:44.269Z",
+    "completed": 0
+}, {
+    "customer_id": 436,
+    "payment_type_id": 3,
+    "product_id": 14,
+    "order_date": "2017-12-01T17:09:17.910Z",
+    "completed": 0
+}, {
+    "customer_id": 51,
+    "payment_type_id": 1,
+    "product_id": 30,
+    "order_date": "2018-02-22T09:07:10.448Z",
+    "completed": 0
+}, {
+    "customer_id": 155,
+    "payment_type_id": 3,
+    "product_id": 13,
+    "order_date": "2017-06-30T09:39:11.375Z",
+    "completed": 1
+}, {
+    "customer_id": 185,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2017-06-14T10:22:37.406Z",
+    "completed": 1
+}, {
+    "customer_id": 331,
+    "payment_type_id": 1,
+    "product_id": 4,
+    "order_date": "2017-04-27T22:55:21.105Z",
+    "completed": 1
+}, {
+    "customer_id": 277,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2017-10-24T05:23:10.085Z",
+    "completed": 0
+}, {
+    "customer_id": 356,
+    "payment_type_id": 2,
+    "product_id": 29,
+    "order_date": "2017-03-10T00:31:54.681Z",
+    "completed": 1
+}, {
+    "customer_id": 241,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2018-02-16T15:54:29.081Z",
+    "completed": 0
+}, {
+    "customer_id": 91,
+    "payment_type_id": 5,
+    "product_id": 13,
+    "order_date": "2017-07-28T20:12:23.709Z",
+    "completed": 1
+}, {
+    "customer_id": 31,
+    "payment_type_id": 3,
+    "product_id": 24,
+    "order_date": "2017-06-17T23:28:43.792Z",
+    "completed": 0
+}, {
+    "customer_id": 182,
+    "payment_type_id": 1,
+    "product_id": 8,
+    "order_date": "2017-04-30T09:59:09.340Z",
+    "completed": 0
+}, {
+    "customer_id": 307,
+    "payment_type_id": 4,
+    "product_id": 26,
+    "order_date": "2017-07-05T04:19:47.492Z",
+    "completed": 0
+}, {
+    "customer_id": 227,
+    "payment_type_id": 1,
+    "product_id": 22,
+    "order_date": "2018-02-17T15:13:04.689Z",
+    "completed": 1
+}, {
+    "customer_id": 21,
+    "payment_type_id": 1,
+    "product_id": 23,
+    "order_date": "2017-12-10T03:49:00.837Z",
+    "completed": 1
+}, {
+    "customer_id": 428,
+    "payment_type_id": 3,
+    "product_id": 21,
+    "order_date": "2017-08-10T22:17:43.932Z",
+    "completed": 1
+}, {
+    "customer_id": 231,
+    "payment_type_id": 1,
+    "product_id": 32,
+    "order_date": "2017-09-19T02:11:20.393Z",
+    "completed": 1
+}, {
+    "customer_id": 246,
+    "payment_type_id": 4,
+    "product_id": 27,
+    "order_date": "2017-11-27T16:22:21.205Z",
+    "completed": 0
+}, {
+    "customer_id": 211,
+    "payment_type_id": 2,
+    "product_id": 6,
+    "order_date": "2017-08-18T14:33:01.200Z",
+    "completed": 1
+}, {
+    "customer_id": 235,
+    "payment_type_id": 1,
+    "product_id": 13,
+    "order_date": "2017-07-22T12:06:57.338Z",
+    "completed": 1
+}, {
+    "customer_id": 101,
+    "payment_type_id": 2,
+    "product_id": 14,
+    "order_date": "2017-12-27T19:27:31.421Z",
+    "completed": 0
+}, {
+    "customer_id": 49,
+    "payment_type_id": 3,
+    "product_id": 18,
+    "order_date": "2018-02-03T02:54:21.973Z",
+    "completed": 0
+}, {
+    "customer_id": 40,
+    "payment_type_id": 3,
+    "product_id": 22,
+    "order_date": "2018-01-08T16:17:53.188Z",
+    "completed": 0
+}, {
+    "customer_id": 481,
+    "payment_type_id": 4,
+    "product_id": 20,
+    "order_date": "2018-01-05T05:31:43.776Z",
+    "completed": 1
+}, {
+    "customer_id": 101,
+    "payment_type_id": 1,
+    "product_id": 1,
+    "order_date": "2017-03-21T09:08:50.698Z",
+    "completed": 0
+}, {
+    "customer_id": 137,
+    "payment_type_id": 3,
+    "product_id": 26,
+    "order_date": "2017-04-23T09:18:05.980Z",
+    "completed": 1
+}, {
+    "customer_id": 213,
+    "payment_type_id": 3,
+    "product_id": 27,
+    "order_date": "2018-02-26T10:01:09.401Z",
+    "completed": 1
+}, {
+    "customer_id": 242,
+    "payment_type_id": 5,
+    "product_id": 29,
+    "order_date": "2017-09-14T14:27:56.245Z",
+    "completed": 0
+}, {
+    "customer_id": 482,
+    "payment_type_id": 3,
+    "product_id": 5,
+    "order_date": "2017-05-13T09:40:45.917Z",
+    "completed": 0
+}, {
+    "customer_id": 64,
+    "payment_type_id": 3,
+    "product_id": 28,
+    "order_date": "2018-02-09T01:30:27.488Z",
+    "completed": 0
+}, {
+    "customer_id": 126,
+    "payment_type_id": 5,
+    "product_id": 1,
+    "order_date": "2017-12-10T21:49:05.380Z",
+    "completed": 0
+}, {
+    "customer_id": 99,
+    "payment_type_id": 2,
+    "product_id": 35,
+    "order_date": "2018-02-04T00:14:26.433Z",
+    "completed": 1
+}, {
+    "customer_id": 233,
+    "payment_type_id": 2,
+    "product_id": 28,
+    "order_date": "2017-07-10T14:46:06.102Z",
+    "completed": 1
+}, {
+    "customer_id": 66,
+    "payment_type_id": 2,
+    "product_id": 14,
+    "order_date": "2017-06-05T01:57:35.214Z",
+    "completed": 1
+}, {
+    "customer_id": 60,
+    "payment_type_id": 1,
+    "product_id": 7,
+    "order_date": "2017-03-21T21:34:38.074Z",
+    "completed": 0
+}, {
+    "customer_id": 365,
+    "payment_type_id": 2,
+    "product_id": 30,
+    "order_date": "2017-05-15T18:41:12.056Z",
+    "completed": 0
+}, {
+    "customer_id": 104,
+    "payment_type_id": 5,
+    "product_id": 32,
+    "order_date": "2017-06-04T11:44:04.186Z",
+    "completed": 0
+}, {
+    "customer_id": 54,
+    "payment_type_id": 2,
+    "product_id": 16,
+    "order_date": "2017-06-29T15:38:10.000Z",
+    "completed": 0
+}, {
+    "customer_id": 210,
+    "payment_type_id": 3,
+    "product_id": 2,
+    "order_date": "2017-05-08T08:33:08.891Z",
+    "completed": 1
+}, {
+    "customer_id": 6,
+    "payment_type_id": 2,
+    "product_id": 13,
+    "order_date": "2017-03-19T10:24:27.132Z",
+    "completed": 1
+}, {
+    "customer_id": 135,
+    "payment_type_id": 2,
+    "product_id": 15,
+    "order_date": "2017-12-17T01:58:19.145Z",
+    "completed": 0
+}, {
+    "customer_id": 229,
+    "payment_type_id": 1,
+    "product_id": 28,
+    "order_date": "2017-07-07T19:09:15.193Z",
+    "completed": 0
+}, {
+    "customer_id": 161,
+    "payment_type_id": 4,
+    "product_id": 9,
+    "order_date": "2017-05-30T07:56:12.755Z",
+    "completed": 1
+}, {
+    "customer_id": 135,
+    "payment_type_id": 3,
+    "product_id": 30,
+    "order_date": "2017-06-11T07:29:11.644Z",
+    "completed": 1
+}, {
+    "customer_id": 466,
+    "payment_type_id": 2,
+    "product_id": 35,
+    "order_date": "2017-07-07T04:30:23.420Z",
+    "completed": 0
+}, {
+    "customer_id": 290,
+    "payment_type_id": 4,
+    "product_id": 16,
+    "order_date": "2017-09-23T14:57:18.800Z",
+    "completed": 1
+}, {
+    "customer_id": 187,
+    "payment_type_id": 2,
+    "product_id": 11,
+    "order_date": "2017-07-05T18:23:15.727Z",
+    "completed": 0
+}, {
+    "customer_id": 130,
+    "payment_type_id": 5,
+    "product_id": 33,
+    "order_date": "2017-06-14T15:08:45.779Z",
+    "completed": 0
+}, {
+    "customer_id": 269,
+    "payment_type_id": 2,
+    "product_id": 9,
+    "order_date": "2017-05-26T04:21:47.554Z",
+    "completed": 0
+}, {
+    "customer_id": 360,
+    "payment_type_id": 3,
+    "product_id": 31,
+    "order_date": "2018-02-10T15:56:43.106Z",
+    "completed": 0
+}, {
+    "customer_id": 105,
+    "payment_type_id": 5,
+    "product_id": 34,
+    "order_date": "2017-07-06T08:14:26.843Z",
+    "completed": 1
+}, {
+    "customer_id": 367,
+    "payment_type_id": 1,
+    "product_id": 21,
+    "order_date": "2017-09-22T00:33:32.838Z",
+    "completed": 0
+}, {
+    "customer_id": 341,
+    "payment_type_id": 4,
+    "product_id": 30,
+    "order_date": "2017-10-09T19:08:35.083Z",
+    "completed": 1
+}, {
+    "customer_id": 326,
+    "payment_type_id": 1,
+    "product_id": 26,
+    "order_date": "2017-10-01T20:26:09.227Z",
+    "completed": 0
+}, {
+    "customer_id": 194,
+    "payment_type_id": 4,
+    "product_id": 21,
+    "order_date": "2018-02-24T16:05:13.783Z",
+    "completed": 0
+}, {
+    "customer_id": 364,
+    "payment_type_id": 4,
+    "product_id": 31,
+    "order_date": "2018-01-06T16:20:28.618Z",
+    "completed": 0
+}, {
+    "customer_id": 284,
+    "payment_type_id": 4,
+    "product_id": 9,
+    "order_date": "2017-08-29T14:34:11.963Z",
+    "completed": 1
+}, {
+    "customer_id": 455,
+    "payment_type_id": 3,
+    "product_id": 7,
+    "order_date": "2018-01-21T02:41:32.752Z",
+    "completed": 1
+}, {
+    "customer_id": 314,
+    "payment_type_id": 4,
+    "product_id": 30,
+    "order_date": "2017-03-15T12:58:47.337Z",
+    "completed": 1
+}, {
+    "customer_id": 90,
+    "payment_type_id": 3,
+    "product_id": 13,
+    "order_date": "2017-10-07T05:00:30.764Z",
+    "completed": 1
+}, {
+    "customer_id": 206,
+    "payment_type_id": 4,
+    "product_id": 14,
+    "order_date": "2017-09-03T13:59:29.305Z",
+    "completed": 1
+}, {
+    "customer_id": 441,
+    "payment_type_id": 3,
+    "product_id": 6,
+    "order_date": "2017-06-05T19:30:41.673Z",
+    "completed": 1
+}, {
+    "customer_id": 483,
+    "payment_type_id": 5,
+    "product_id": 9,
+    "order_date": "2018-02-19T23:53:39.081Z",
+    "completed": 1
+}, {
+    "customer_id": 172,
+    "payment_type_id": 1,
+    "product_id": 15,
+    "order_date": "2017-09-24T01:22:25.170Z",
+    "completed": 1
+}, {
+    "customer_id": 226,
+    "payment_type_id": 3,
+    "product_id": 1,
+    "order_date": "2018-02-20T20:29:12.610Z",
+    "completed": 0
+}, {
+    "customer_id": 343,
+    "payment_type_id": 1,
+    "product_id": 30,
+    "order_date": "2017-09-05T11:03:17.914Z",
+    "completed": 0
+}, {
+    "customer_id": 484,
+    "payment_type_id": 5,
+    "product_id": 30,
+    "order_date": "2018-02-03T16:59:41.476Z",
+    "completed": 0
+}, {
+    "customer_id": 129,
+    "payment_type_id": 5,
+    "product_id": 4,
+    "order_date": "2017-05-04T02:06:39.606Z",
+    "completed": 1
+}, {
+    "customer_id": 107,
+    "payment_type_id": 1,
+    "product_id": 19,
+    "order_date": "2017-10-24T04:05:38.023Z",
+    "completed": 1
+}, {
+    "customer_id": 349,
+    "payment_type_id": 4,
+    "product_id": 27,
+    "order_date": "2017-04-24T08:12:57.236Z",
+    "completed": 1
+}, {
+    "customer_id": 331,
+    "payment_type_id": 5,
+    "product_id": 20,
+    "order_date": "2017-04-06T17:56:33.780Z",
+    "completed": 1
+}, {
+    "customer_id": 151,
+    "payment_type_id": 5,
+    "product_id": 16,
+    "order_date": "2017-04-23T12:45:28.631Z",
+    "completed": 0
+}, {
+    "customer_id": 31,
+    "payment_type_id": 2,
+    "product_id": 4,
+    "order_date": "2017-11-10T14:41:59.432Z",
+    "completed": 0
+}, {
+    "customer_id": 276,
+    "payment_type_id": 1,
+    "product_id": 35,
+    "order_date": "2017-08-19T22:20:51.753Z",
+    "completed": 0
+}, {
+    "customer_id": 70,
+    "payment_type_id": 3,
+    "product_id": 19,
+    "order_date": "2017-06-22T05:24:42.008Z",
+    "completed": 0
+}, {
+    "customer_id": 280,
+    "payment_type_id": 1,
+    "product_id": 32,
+    "order_date": "2018-02-20T14:46:15.496Z",
+    "completed": 0
+}, {
+    "customer_id": 116,
+    "payment_type_id": 4,
+    "product_id": 3,
+    "order_date": "2017-06-16T12:25:04.892Z",
+    "completed": 1
+}, {
+    "customer_id": 60,
+    "payment_type_id": 4,
+    "product_id": 32,
+    "order_date": "2018-03-02T15:03:21.588Z",
+    "completed": 0
+}, {
+    "customer_id": 290,
+    "payment_type_id": 1,
+    "product_id": 23,
+    "order_date": "2017-12-18T18:33:07.491Z",
+    "completed": 1
+}, {
+    "customer_id": 92,
+    "payment_type_id": 5,
+    "product_id": 14,
+    "order_date": "2017-10-31T20:42:26.801Z",
+    "completed": 0
+}, {
+    "customer_id": 29,
+    "payment_type_id": 4,
+    "product_id": 24,
+    "order_date": "2017-08-27T17:58:02.256Z",
+    "completed": 0
+}, {
+    "customer_id": 460,
+    "payment_type_id": 3,
+    "product_id": 34,
+    "order_date": "2017-04-17T20:32:44.239Z",
+    "completed": 1
+}, {
+    "customer_id": 37,
+    "payment_type_id": 5,
+    "product_id": 22,
+    "order_date": "2017-11-10T10:55:52.138Z",
+    "completed": 0
+}, {
+    "customer_id": 29,
+    "payment_type_id": 2,
+    "product_id": 11,
+    "order_date": "2017-06-08T08:53:05.019Z",
+    "completed": 0
+}, {
+    "customer_id": 300,
+    "payment_type_id": 1,
+    "product_id": 2,
+    "order_date": "2018-01-15T10:33:09.454Z",
+    "completed": 1
+}, {
+    "customer_id": 79,
+    "payment_type_id": 4,
+    "product_id": 3,
+    "order_date": "2017-07-30T12:40:21.123Z",
+    "completed": 1
+}, {
+    "customer_id": 284,
+    "payment_type_id": 1,
+    "product_id": 28,
+    "order_date": "2017-07-26T05:21:21.091Z",
+    "completed": 1
+}, {
+    "customer_id": 189,
+    "payment_type_id": 5,
+    "product_id": 5,
+    "order_date": "2017-03-29T19:32:39.923Z",
+    "completed": 0
+}, {
+    "customer_id": 184,
+    "payment_type_id": 2,
+    "product_id": 20,
+    "order_date": "2017-07-28T15:38:00.272Z",
+    "completed": 1
+}, {
+    "customer_id": 201,
+    "payment_type_id": 1,
+    "product_id": 21,
+    "order_date": "2018-02-28T05:45:03.195Z",
+    "completed": 1
+}, {
+    "customer_id": 466,
+    "payment_type_id": 5,
+    "product_id": 32,
+    "order_date": "2017-12-27T02:21:51.565Z",
+    "completed": 1
+}, {
+    "customer_id": 281,
+    "payment_type_id": 5,
+    "product_id": 25,
+    "order_date": "2017-04-03T23:01:36.423Z",
+    "completed": 1
+}, {
+    "customer_id": 96,
+    "payment_type_id": 4,
+    "product_id": 18,
+    "order_date": "2017-03-05T10:38:03.466Z",
+    "completed": 1
+}, {
+    "customer_id": 487,
+    "payment_type_id": 3,
+    "product_id": 3,
+    "order_date": "2017-04-25T01:01:30.883Z",
+    "completed": 1
+}, {
+    "customer_id": 8,
+    "payment_type_id": 2,
+    "product_id": 32,
+    "order_date": "2017-11-04T12:40:39.232Z",
+    "completed": 0
+}, {
+    "customer_id": 236,
+    "payment_type_id": 1,
+    "product_id": 21,
+    "order_date": "2018-01-03T17:21:58.711Z",
+    "completed": 0
+}, {
+    "customer_id": 286,
+    "payment_type_id": 1,
+    "product_id": 10,
+    "order_date": "2017-11-01T05:21:50.936Z",
+    "completed": 0
+}, {
+    "customer_id": 344,
+    "payment_type_id": 2,
+    "product_id": 28,
+    "order_date": "2017-06-11T11:00:52.753Z",
+    "completed": 1
+}, {
+    "customer_id": 288,
+    "payment_type_id": 1,
+    "product_id": 8,
+    "order_date": "2017-03-16T05:16:42.160Z",
+    "completed": 1
+}, {
+    "customer_id": 16,
+    "payment_type_id": 4,
+    "product_id": 33,
+    "order_date": "2018-01-07T18:19:55.578Z",
+    "completed": 0
+}, {
+    "customer_id": 1,
+    "payment_type_id": 5,
+    "product_id": 4,
+    "order_date": "2017-11-21T21:59:14.555Z",
+    "completed": 0
+}, {
+    "customer_id": 491,
+    "payment_type_id": 4,
+    "product_id": 23,
+    "order_date": "2017-10-16T19:09:52.725Z",
+    "completed": 1
+}, {
+    "customer_id": 346,
+    "payment_type_id": 5,
+    "product_id": 22,
+    "order_date": "2018-01-02T13:50:12.166Z",
+    "completed": 1
+}, {
+    "customer_id": 403,
+    "payment_type_id": 4,
+    "product_id": 21,
+    "order_date": "2017-08-11T08:12:37.037Z",
+    "completed": 0
+}, {
+    "customer_id": 426,
+    "payment_type_id": 2,
+    "product_id": 34,
+    "order_date": "2017-12-08T09:13:36.719Z",
+    "completed": 0
+}, {
+    "customer_id": 78,
+    "payment_type_id": 1,
+    "product_id": 12,
+    "order_date": "2017-11-20T15:38:35.295Z",
+    "completed": 0
+}, {
+    "customer_id": 447,
+    "payment_type_id": 4,
+    "product_id": 14,
+    "order_date": "2017-08-08T06:23:58.413Z",
+    "completed": 1
+}, {
+    "customer_id": 461,
+    "payment_type_id": 2,
+    "product_id": 32,
+    "order_date": "2018-02-19T10:48:29.805Z",
+    "completed": 1
+}]
