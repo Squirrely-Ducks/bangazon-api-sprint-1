@@ -2,11 +2,11 @@ const sqlite3 = require('sqlite3').verbose();
 const { readFileSync } = require("fs");
 
 //get created products data from data folder
-const prodData = JSON.parse(readFileSync("../data/products.json"));
+const prodData = JSON.parse(readFileSync("./data/products.json"));
 
 //build products table
 
-const db = new sqlite3.Database("squirrely_ducks.sqlite");
+const db = new sqlite3.Database("db/squirrely_ducks.sqlite");
 
 module.exports.build_prod_table = () => {
   return new Promise((resolve, reject) => {
