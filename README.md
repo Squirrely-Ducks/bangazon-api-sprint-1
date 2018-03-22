@@ -21,62 +21,62 @@ In order to initialize and seed the database you will need to enter a few simple
 As of now, all calls to the BangazonCorp API will be from `httt://localhost:????`
 
 ### CUSTOMERS
-GET all customers
-GET single customer
-POST
-PUT
+*GET all customers
+*GET single customer
+*POST
+*PUT
 
 ### PRODUCTS
-GET all products
-GET single product
-POST
-PUT
-DELETE
+*GET all products
+*GET single product
+*POST
+*PUT
+*DELETE
 
 ### PAYMENT TYPE
-GET all payment types
-GET single payment type
-POST
-PUT
-DELETE
+*GET all payment types
+*GET single payment type
+*POST
+*PUT
+*DELETE
 
 ### ORDERS
-GET all orders
-GET single order
-POST
-PUT
-DELETE
+*GET all orders
+*GET single order
+*POST
+*PUT
+*DELETE
 
 ### PRODUCT TYPE
-GET all product types
-GET single product types
-POST
-PUT
-DELETE
+*GET all product types
+*GET single product types
+*POST
+*PUT
+*DELETE
 
 ### EMPLOYEES
-GET all employees
-GET single employee
-POST
-PUT
+*GET all employees
+*GET single employee
+*POST
+*PUT
 
 ### DEPARTMENTS
-GET all departments
-GET single departments
-POST
-PUT
+*GET all departments
+*GET single departments
+*POST
+*PUT
 
 
 ### COMPUTERS
-GET all computers
-GET single computers
-POST
-PUT
-DELETE
+*GET all computers
+*GET single computers
+*POST
+*PUT
+*DELETE
 
 ### TRAINING PROGRAMS
-GET all training programs
-GET single training program
-POST
-PUT
-DELETE(only if date is in future)
+*GET all training programs
+*GET single training program
+*POST
+*PUT
+*DELETE(only if date is in future)
