@@ -9,6 +9,7 @@ const { build_order_table, insert_order_data } = require('./build_order');
 const { build_payment_type_table, insert_payment_type_data } = require('./build_payment_type');
 const { build_computer_table, insert_computer } = require('./build_computer');
 const { build_department_table, insert_department } = require('./build_department');
+const { build_employee_training_table, insert_employee_training_data } = require('./build_employee_training');
 
 
 //instantiate database and call individual table create and populate data functions
@@ -63,4 +64,10 @@ build_prod_table()
   })
   .then(() => {
     return insert_department();
+  })
+  .then(() => {
+    return build_employee_training_table();
+  })
+  .then(() => {
+    return insert_employee_training_data();
   });
