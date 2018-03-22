@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const { readFileSync } = require("fs");
 
 //get created products data from data folder
-const training_program = JSON.parse(readFileSync("./data/training_program.json"));
+const training_program = JSON.parse(readFileSync("./data/json/training_program.json"));
 const db = new sqlite3.Database("db/squirrely_ducks.sqlite");
 //build products table
 module.exports.build_train_table = () => {

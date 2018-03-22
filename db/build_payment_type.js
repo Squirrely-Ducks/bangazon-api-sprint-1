@@ -5,7 +5,7 @@ const db = new sqlite3.Database("db/squirrely_ducks.sqlite");
 const { readFileSync } = require("fs");
 
 //get created payment type data from data folder
-const payment_type_data = JSON.parse(readFileSync("./data/payment_type.json"));
+const payment_type_data = JSON.parse(readFileSync("./data/json/payment_type.json"));
 module.exports.build_payment_type_table = () => {
   return new Promise((resolve, reject) => {
     db.run(`DROP TABLE IF EXISTS payment_type`);

@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const { readFileSync } = require("fs");
 
 // get created computer data from data folder
-const department_data = JSON.parse(readFileSync("./data/department.json"));
+const department_data = JSON.parse(readFileSync("./data/json/department.json"));
 
 //build products table
 const db = new sqlite3.Database("db/squirrely_ducks.sqlite");

@@ -5,7 +5,7 @@ const { readFileSync } = require("fs");
 const db = new sqlite3.Database('db/squirrely_ducks.sqlite');
 
 //get created order data from data folder
-const order_data = JSON.parse(readFileSync("./data/orders.json"));
+const order_data = JSON.parse(readFileSync("./data/json/orders.json"));
 module.exports.build_order_table = ()=> {
   return new Promise( (resolve, reject)=> {
       db.run(`DROP TABLE IF EXISTS orders`);

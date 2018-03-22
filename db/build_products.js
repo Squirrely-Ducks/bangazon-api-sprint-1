@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const { readFileSync } = require("fs");
 
 //get created products data from data folder
-const prodData = JSON.parse(readFileSync("./data/products.json"));
+const prodData = JSON.parse(readFileSync("./data/json/products.json"));
 
 //build products table
 
