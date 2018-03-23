@@ -37,7 +37,11 @@ As of now, all calls to the BangazonCorp API will be from `http://localhost:4200
 
 ### PAYMENT TYPE
 * GET all payment types
-* GET single payment type
+** To get all customers add `payment` to the URL
+* GET single payment type by type ID
+** To get a single payment type add `payment/type/:id` to the URL
+* GET single payment type by customer ID
+** To get a single payment type add `payment/customer/:id` to the URL
 * POST
 * PUT
 * DELETE
