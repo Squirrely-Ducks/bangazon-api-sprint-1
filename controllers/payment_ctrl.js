@@ -1,4 +1,4 @@
-const { get_all, get_by_type, get_by_customer } = require('../models/Payments');
+const { get_all, get_by_type, get_by_customer, new_payment } = require('../models/Payments');
 
 module.exports.get_payments = (req, res, next) => {
     get_all()

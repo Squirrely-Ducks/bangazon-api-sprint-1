@@ -40,3 +40,20 @@ module.exports.get_by_customer = (id) => {
             });
     });
 };
+
+module.exports.new_payment = ({ customer_id, type, account_number}) => {
+    return new Promise((resolve, reject) => {
+        db.run(`INSERT INTO payment_type VALUES (
+            null,
+            ${customer_id},
+            "${type}",
+            "${account_number}",)`, 
+            function(err, pay) {
+                if (err){
+                    console.log(err);
+                    reject(err);
+                }
+                resolve(pay, this.lastId);
+            });
+    });
+}
