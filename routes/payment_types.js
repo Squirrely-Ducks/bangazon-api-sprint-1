@@ -5,6 +5,6 @@ const {get_payments, get_by_type, get_customer_payment} = require('../controller
 
 paymentRouter.get('/payment', get_payments);
 paymentRouter.get('/payment/type/:id', get_by_type);
-// payment_router.get('/payment/customer/:id', get_customer_payment);
+paymentRouter.get('/payment/customer/:id', get_customer_payment);
 
 module.exports = paymentRouter;
