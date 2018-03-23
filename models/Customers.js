@@ -26,3 +26,27 @@ module.exports.get_one = (id) => {
             });
     });
 };
+
+module.exports.new_customer = ({ first_name, last_name, street, city, state, zip, phone, email, acct_date, active}) => {
+    return new Promise((resolve, reject) => {
+        db.run(`INSERT INTO customer VALUES (
+            null,
+            "${first_name}",
+            "${last_name}",
+            "${street}", 
+            "${city}",
+            "${state}",
+            "${zip}",
+            ${phone},
+            "${email}",
+            "${acct_date}",
+            ${active})`,
+            function(err, cust) {
+                if (err){
+                    console.log(err);
+                    reject(err);
+                }
+                resolve(cust, this.lastId);
+            });
+    });
+}
