@@ -2,13 +2,13 @@
     Welcome to the Bangazon Corporation API. The purpose of the API is to allow the user to GET/POST/PUT/DELETE from the Banagazon Database. Instructions below are required before the API can be initialized and accessed.
 
 ## Steps for Installation:
-    In your terminal enter the following commands to gain access to the BangazonCorp API:
-    1. ``` git clone https://github.com/Squirrely-Ducks/bangazon-api-sprint-1.git ```
-    2. ``` npm init -y ```
-    >Initialize Node Packet Manager
-    3. ``` npm install ```
-    >Installs all the Node Packets that are required as dependancies in the package.json file.
-    Your environment is now set up run the BangazonCorp API
+In your terminal enter the following commands to gain access to the BangazonCorp API:
+1. ``` git clone https://github.com/Squirrely-Ducks/bangazon-api-sprint-1.git ```
+2. ``` npm init -y ```
+>Initialize Node Packet Manager
+3. ``` npm install ```
+>Installs all the Node Packets that are required as dependancies in the package.json file.
+Your environment is now set up run the BangazonCorp API
 
 ## Initializing and Seeding the BangazonCorp Database
 As it stands, the database will be hosted locally on you machine.
@@ -18,11 +18,13 @@ In order to initialize and seed the database you will need to enter a few simple
     2. ` node db/build_db.js `
     >This will insert the randomized data into the SQLite DataBase
 ## Usage of API
-As of now, all calls to the BangazonCorp API will be from `httt://localhost:????`
+As of now, all calls to the BangazonCorp API will be from `http://localhost:4200/api/v1/`
 
 ### CUSTOMERS
 * GET all customers
+** To get all customers add `customers` to the URL
 * GET single customer
+** To get a single customer add `customers/:id` to the URL
 * POST
 * PUT
 
