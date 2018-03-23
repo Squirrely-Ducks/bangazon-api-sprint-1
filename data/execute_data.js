@@ -9,6 +9,7 @@ const { execute_prod_type_data } = require(`./product_type_data/build_product_ty
 const { execute_order_data} = require(`./order_data/build_order_data`);
 const { execute_payment_type_data } = require(`./payment_data/build_payment_type_data`);
 const { execute_employee_training_data } = require('./employee_training_data/build_employee_training_data');
+const {execute_order_product_data }= require('./order_product/build_order_product_data');
 
 
 execute_prod_data();
@@ -22,4 +23,4 @@ execute_train_data();
 execute_order_data();
 execute_payment_type_data();
 execute_employee_training_data();
-
+execute_order_product_data()
