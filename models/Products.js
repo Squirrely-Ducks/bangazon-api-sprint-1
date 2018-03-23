@@ -1,6 +1,7 @@
 const sqlite3 = require('sqlite3').verbose();
 const db = new sqlite3.Database('./db/squirrely_ducks.sqlite');
 
+// a method returning a promise that queries and selects all products from the data base
 module.exports.get_all = () => {
     return new Promise((resolve, reject) =>{
         db.all(
@@ -13,6 +14,7 @@ module.exports.get_all = () => {
     });
 };
 
+// method returning a promise that queries and selects a single product from the data base
 module.exports.get_one = (id) =>{
     return new Promise((resolve, reject) =>{
         db.get(
@@ -26,4 +28,22 @@ module.exports.get_one = (id) =>{
     });
 };
 
-module.exports.new_products = ({ title, price, description, type_id, seller_id })
+// method that returns a promise that posts a new product to the data base 
+module.exports.new_products = ({ title, price, description, type_id, seller_id }) => {
+    return new Promise((resolve, reject) => {
+        db.run(` INSERT INTO product VALUES (
+            null,
+            "${title}",
+            "${price}",
+            "${description}",
+            ${type_id},
+            ${seller_id}) `, function(err, product) {
+                if (err) {
+                    console.log(err);
+                    reject(err);
+
+                }
+                resolve(product, this.lastID)
+            })
+    })
+}
