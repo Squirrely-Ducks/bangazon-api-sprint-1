@@ -1,0 +1,37 @@
+const {get_all, get_by_type, get_by_customer} = require('../models/Payments');
+
+module.exports.get_payments = (req, res, next) => {
+    get_all()
+        .then((payments)=> {
+            res.status(200).json(payments);
+        })
+        .catch((err)=> next(err));
+}
+
+module.exports.get_by_type = (req, res, next) => {
+    let id = req.params.id
+    get_by_type(id)
+    .then((payments) => {
+        if (payments) {
+            res.status(200).json(payments);
+        } else {
+            let err = new Error('404: customer not found');
+            next(err);
+        }
+    })
+    .catch((err)=> next(err));
+}
+
+// module.exports.get_by_customer = (res, req, next) => {
+//     let id = req.params.id
+//     get_by_customer(id)
+//     .then((customer)=>{
+//         if(customer){
+//             res.status('200', customer);
+//         }else{
+//             let err = new Error('404: customer not found');
+//             next(err);
+//         }
+//     })
+//     .catch((err)=> next(err));
+// }
