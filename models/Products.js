@@ -25,3 +25,5 @@ module.exports.get_one = (id) =>{
             });
     });
 };
+
+module.exports.new_products = ({ title, price, description, type_id, seller_id })
