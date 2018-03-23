@@ -23,7 +23,7 @@ module.exports.get_one = (id) => {
                 if (err) return reject(err);
                 resolve(emp);
             });
-    })
+    });
 }
 
 module.exports.get_supervisors = () => {
@@ -36,8 +36,25 @@ module.exports.get_supervisors = () => {
             (err, emp) => {
                 if (err) return reject(err);
                 resolve(emp);
-            }
-        )
-    })
+            });
+    });
+}
 
+
+module.exports.new_employee = ({ department_id, first_name, last_name, job_title, is_supervisor }) => {
+    return new Promise((resolve, reject) => {
+        db.run(`INSERT INTO employee VALUES (
+            null,
+            ${department_id},
+            "${first_name}",
+            "${last_name}",
+            "${job_title}",
+            ${is_supervisor})`, (err, emp) => {
+                if (err){
+                    console.log(err);
+                    reject(err);
+                }
+                resolve(emp, this.lastId);
+            });
+    });
 }
