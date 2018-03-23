@@ -35,3 +35,10 @@ module.exports.get_customer_payment = (req, res, next) => {
         })
         .catch((err) => next(err));
 }
+
+module.exports.add_payment = (req, res, next) => { 
+    new_payment(req.body)
+        .then((payment) => {
+            res.status(200).json(payment);
+        }).catch((err) => next(err));
+}

@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 const routes = require('./routes/');
+const bodyParser = require('body-parser');
 
+app.use(bodyParser.json());
 
-app.use('/api/v1/', routes);
+app.use('/api/v1', routes);
 
 app.use((req, res, next) => {
     let error = new Error("This is an error. You should not see this");
