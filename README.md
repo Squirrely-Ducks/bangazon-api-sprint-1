@@ -81,8 +81,39 @@ As of now, all calls to the BangazonCorp API will be from `http://localhost:4200
 * DELETE
 
 ### TRAINING PROGRAMS
-* GET all training programs
-* GET single training program
+#### GET all training programs:
+1. To get list of all training programs:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id
+```
+
+2. To get list of training programs with enrolled employees:
+```javascript
+http://localhost:4200/api/v1/training_programs/employees
+```
+
+#### GET single training program
+1. To get one training program:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id
+```
+
+2. To get one training program with enrolled employees:
+```javascript
+http://localhost:4200/api/v1/training_programs/program/:id
+```
+If null is returned, program does not have enrolled employees.
+
+3. To get list of enrolled training programs by one employee:
+```javascript
+http://localhost:4200/api/v1/training_programs/program/:id
+```
+If null is returned, employee has not enrolled in training programs.
+
 * POST
 * PUT
 * DELETE(only if date is in future)
+
+
+
+
