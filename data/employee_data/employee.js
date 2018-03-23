@@ -6,7 +6,7 @@ module.exports.generate_employee = () => {
   let employee = [];
   for (let i = 0; i < 50; i++) {
     supCount++ 
-    let department_id = Math.floor(Math.random() * (7) + 1);
+    let department_id = `${supCount<8 ? supCount : Math.floor(Math.random() * (7) + 1)}`;
     let first_name = faker.name.firstName();
     let last_name = faker.name.lastName();
     let job_title = faker.name.jobTitle();

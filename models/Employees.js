@@ -29,7 +29,7 @@ module.exports.get_one = (id) => {
 module.exports.get_supervisors = () => {
     return new Promise((resolve, reject) => {
         console.log('hello');
-        db.all(`SELECT first_name, last_name, job_title,  department.dept_name department_name
+        db.all(`SELECT (first_name || " "|| last_name) as name, job_title,  department.dept_name department_name
         FROM employee
         JOIN department ON dept_id = department_id
         WHERE employee.is_supervisor = 1`,
@@ -49,12 +49,12 @@ module.exports.new_employee = ({ department_id, first_name, last_name, job_title
             "${first_name}",
             "${last_name}",
             "${job_title}",
-            ${is_supervisor})`, (err, emp) => {
-                if (err){
+            ${is_supervisor})`, function (err, emp) {
+                if (err) {
                     console.log(err);
                     reject(err);
                 }
-                resolve(emp, this.lastId);
+                resolve(emp, this.lastID);
             });
     });
 }
