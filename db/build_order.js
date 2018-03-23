@@ -8,7 +8,7 @@ const db = new sqlite3.Database('db/squirrely_ducks.sqlite');
 const order_data = JSON.parse(readFileSync("./data/json/orders.json"));
 module.exports.build_order_table = ()=> {
   return new Promise( (resolve, reject)=> {
-      db.run(`DROP TABLE IF EXISTS orders`);
+      db.run(`DROP TABLE IF EXISTS order`);
       db.run(`CREATE TABLE IF NOT EXISTS orders 
         (order_id INTEGER PRIMARY KEY,
         customer_id INT,
