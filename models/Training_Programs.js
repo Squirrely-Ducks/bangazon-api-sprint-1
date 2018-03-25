@@ -75,7 +75,6 @@ module.exports.get_employee_programs = (id) => {
         WHERE employee.employee_id = ${id}`, 
         (err, program) => {
             if (err) return reject(err);
-            console.log('Program', program);
             if (program[0].employee === null) {
                 resolve({"message": "This employee is not enrolled in any programs"});
             }
@@ -84,18 +83,3 @@ module.exports.get_employee_programs = (id) => {
     });
 };
 
-// ADD NEW TRAINING PROGRAM
-module.exports.new_training_program = ({ name, start_date, end_date, capacity}) => {
-    return new Promise((resolve, reject) => {
-        db.run(`INSERT INTO training_program VALUES (
-            null,
-            "${name}",
-            "${start_date}",
-            "${end_date}",
-            ${capacity}
-        )`, function(err) {
-            if (err) reject(err);
-            resolve(this.lastID);
-        });
-    });
-};
