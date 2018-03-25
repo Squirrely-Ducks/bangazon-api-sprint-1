@@ -14,7 +14,7 @@ module.exports.get_all = () => {
     });
 };
 
-//GET ALL TRAINING PROGRAMS WITH LIST OF EMPLOYEES 
+// GET ALL TRAINING PROGRAMS WITH LIST OF EMPLOYEES 
 module.exports.get_all_employees = () => {
     return new Promise((resolve, reject) => {
         db.all(`SELECT training_program.*, group_concat(employee.first_name || " " || employee.last_name, ", ") AS "employees"
@@ -32,7 +32,7 @@ module.exports.get_all_employees = () => {
 };
 
 
-//GET ONE TRAINING PROGRAM
+// GET ONE TRAINING PROGRAM
 module.exports.get_one = (id) => {
     return new Promise((resolve, reject) => {
         db.all(`SELECT * 
@@ -45,7 +45,7 @@ module.exports.get_one = (id) => {
     });
 };
 
-//GET ONE TRAINING PROGRAM'S LIST OF EMPLOYEES
+// GET ONE TRAINING PROGRAM'S LIST OF EMPLOYEES
 module.exports.get_one_employees = (id) => {
     return new Promise((resolve, reject) => {
         db.all(`SELECT training_program.*, group_concat(employee.first_name || " " || employee.last_name, ", ") AS "employees"
@@ -62,7 +62,7 @@ module.exports.get_one_employees = (id) => {
     });
 };
 
-//GET ONE EMPLOYEE'S LIST OF TRAINING PROGRAMS
+// GET ONE EMPLOYEE'S LIST OF TRAINING PROGRAMS
 module.exports.get_employee_programs = (id) => {
     return new Promise((resolve, reject) => {
         db.all(`SELECT employee.first_name || " " || employee.last_name AS "employee", 
@@ -75,7 +75,27 @@ module.exports.get_employee_programs = (id) => {
         WHERE employee.employee_id = ${id}`, 
         (err, program) => {
             if (err) return reject(err);
+            console.log('Program', program);
+            if (program[0].employee === null) {
+                resolve({"message": "This employee is not enrolled in any programs"});
+            }
             resolve(program);
+        });
+    });
+};
+
+// ADD NEW TRAINING PROGRAM
+module.exports.new_training_program = ({ name, start_date, end_date, capacity}) => {
+    return new Promise((resolve, reject) => {
+        db.run(`INSERT INTO training_program VALUES (
+            null,
+            "${name}",
+            "${start_date}",
+            "${end_date}",
+            ${capacity}
+        )`, function(err) {
+            if (err) reject(err);
+            resolve(this.lastID);
         });
     });
 };
