@@ -48,7 +48,29 @@ module.exports.new_department = ({ dept_name, budget, supervisor_id }) => {
                     console.log(err);
                     reject(err);
                 }
-                resolve(dept, this.lastID);
+                resolve(this.lastID);
+            });
+    });
+}
+
+module.exports.get_employee_for_promotion = () => {
+    return new Promise((resolve, reject) => {
+        db.get(`SELECT employee_id FROM employee
+        WHERE is_supervisor=0`,
+            (err, emp) => {
+                if (err) return reject(err);
+                resolve(emp);
+            });
+
+    });
+}
+
+module.exports.update_department = (id, column, value) => {
+    return new Promise((resolve, reject) => {
+        db.run(`UPDATE department
+            SET "${column}" = "${value}"
+            WHERE dept_id=${id}`, function (err, rows) {
+                resolve(this.changes);
             });
     });
 }
