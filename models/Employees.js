@@ -58,3 +58,14 @@ module.exports.new_employee = ({ department_id, first_name, last_name, job_title
             });
     });
 }
+
+module.exports.update_employeee = (id,  column, value ) => {
+    return new Promise((resolve, reject) => {
+        db.run(`UPDATE employee
+            SET "${column}" = "${value}"
+            WHERE employee_id=${id}`, function (err, rows) {
+                resolve(this.changes);
+            });
+    });
+}
+
