@@ -28,3 +28,7 @@ module.exports.add_prod_type = (req, res, next) => {
         res.status(200).json(prodType);
     }).catch((err)=> next(err));
 }
+
+module.exports.delete_prod_type = (req, res, next) => {
+    
+}
