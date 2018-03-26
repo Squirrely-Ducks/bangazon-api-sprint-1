@@ -6,7 +6,7 @@ const { get_orders, get_one_order, add_order, edit_order, order_deleted }= requi
 orderRouter.get('/orders', get_orders);
 orderRouter.get('/orders/:id', get_one_order);
 orderRouter.post('/order/new', add_order);
+orderRouter.delete('/order/:id/delete', order_deleted);
 orderRouter.put('/order/:id/edit', edit_order);
-orderRouter.delete('/order/delete/:id', order_deleted);
 
 module.exports = orderRouter;
