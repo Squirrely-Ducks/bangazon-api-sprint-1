@@ -42,33 +42,33 @@ To begin enter the following command to initialize the server `nodemon app.js`
 
 ### PRODUCTS
 * GET all products
-    ** To access all products enter address `/products`
+    * To access all products enter address `/products`
 * GET single product by product_id
-    ** To access a single product by product_ID `/products/:id`
+    * To access a single product by product_ID `/products/:id`
 * POST
-    ** To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
+    * To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:```{
                                 "title": "new info",
                                 "price": new info,
                                 "description": "new info",
                                 "type_id": new info,
                                 "seller_id": new info
-                            }
+                            }```
 * PUT
 * DELETE
 
 ### PAYMENT TYPE
 * GET all payment types
-    ** To get all customers add `/payment` to the URL
+    * To get all customers add `/payment` to the URL
 * GET single payment type by type ID
-    ** To get a single payment type add `/payment/type/:id` to the URL
+    * To get a single payment type add `/payment/type/:id` to the URL
 * GET single payment type by customer ID
-    ** To get a single payment type add `/payment/customer/:id` to the URL
+    * To get a single payment type add `/payment/customer/:id` to the URL
 * POST
-    ** To post a new payment type, use the URL(in Postman or something similar) `/payment/new` to post a new object with the following keys:{ 
+    * To post a new payment type, use the URL(in Postman or something similar) `/payment/new` to post a new object with the following keys:```{ 
                                 'customer_id': new info,
                                 'type': new info,
                                 'account_number': new info
-                            }
+                            }```
 * PUT
 * DELETE
 
@@ -90,9 +90,9 @@ To begin enter the following command to initialize the server `nodemon app.js`
 * GET all employees
     ** To get all customers add `/employees` to the URL
 * GET single employee
-    ** To get a single customer by id add `/employees/:id` to the URL
+    * To get a single customer by id add `/employees/:id` to the URL
 * POST
-    ** To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
+    * To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
                                 "deparment_id": new info,
                                 "first_name": "new info",
                                 "last_name": "new info",
