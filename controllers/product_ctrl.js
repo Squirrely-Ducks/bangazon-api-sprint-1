@@ -30,4 +30,4 @@ module.exports.add_products = (req, res, next ) => {
     .then((product) =>{
         res.status(200).json(product);
     }).catch((err) => next(err))
-}
+};
