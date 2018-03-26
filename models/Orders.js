@@ -53,7 +53,7 @@ module.exports.update_order = (id, column, value) => {
     return new Promise((resolve, reject) => {
         db.run(`UPDATE orders
                 SET "${column}" = "${value}"
-                WHERE payment_type_id = ${id}`,
+                WHERE order_id = ${id}`,
             function (err, rows) {
                 resolve(this.changes);
             });
@@ -61,12 +61,14 @@ module.exports.update_order = (id, column, value) => {
 };
 
 // method that returns a promise that deletes an order from the data base 
-module.exports.delete_payment = (id) => {
+module.exports.delete_order = (id) => {
     return new Promise((resolve, reject) => {
+        console.log('is this here' );
+        
         db.run(`DELETE FROM orders
                 WHERE order_id = ${id}`,
             function (err, column) {
-                resolve(this.lastID);
+                resolve(column);
             });
     });
 };

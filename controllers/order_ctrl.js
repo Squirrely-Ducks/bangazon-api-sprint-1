@@ -1,4 +1,6 @@
-const { get_all, get_one, new_orders, update_order, order_deleted }= require('../models/Orders');
+
+
+const { get_all, get_one, new_orders, update_order, delete_order }= require('../models/Orders');
 
 // method for getting all products from the data base
 module.exports.get_orders = (req, res, next) => {
@@ -43,8 +45,10 @@ module.exports.edit_order = (req, res, next) => {
 
 // method requiring the delete order method using delete to remove from the data base 
 module.exports.order_deleted = (req, res, next) => {
+    console.log('working');
     let id = req.params.id;
-    delete_payment(id)
+    
+    delete_order(id)
         .then((order) => {
             res.status(200).json(order);
         }).catch((err) => next(err));
