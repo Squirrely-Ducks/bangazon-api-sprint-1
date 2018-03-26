@@ -18,7 +18,10 @@ module.exports.get_one = (id) => {
     return new Promise((resolve, reject) => {
         db.all(`SELECT *
                 FROM product_type
-                WHERE type_id = ${id}`)
+                WHERE type_id = ${id}`,
+                function(err,prod){
+                    resolve(prod);
+                })
     });
 };
 
