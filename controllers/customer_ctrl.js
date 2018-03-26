@@ -1,4 +1,4 @@
-const { get_all, get_one, new_customer } = require('../models/Customers');
+const { get_all, get_one, new_customer, not_active } = require('../models/Customers');
 
 module.exports.get_customers = (req, res, next) => {
     get_all()
@@ -27,4 +27,13 @@ module.exports.add_customer = (req, res, next) => {
         .then((customer) => {
             res.status(200).json(customer);
         }).catch((err) => next(err));
+}
+
+// method executing not active 
+module.exports.view_non_active = (req, res, next ) => {
+    not_active()
+        .then((customers) =>{
+            res.status(200).json(customers);
+        })
+        .catch((err) => next(err));
 }
