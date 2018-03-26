@@ -30,7 +30,7 @@ module.exports.get_customer_payment = (req, res, next) => {
             if (payments) {
                 res.status(200).json(payments);
             } else {
-                let err = new Error('404: customer not found');
+                let err = new Error('404: payment not found');
                 next(err);
             }
         })
