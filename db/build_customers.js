@@ -20,10 +20,10 @@ module.exports.build_cust_table = () => {
       city TEXT,
       state TEXT,
       zip TEXT,
-      phone INT,
+      phone TEXT,
       email TEXT,
-      acct_date TEXT
-      active INT
+      acct_date TEXT,
+      active TEXT
     )`, () => {
         resolve();
       });
@@ -42,6 +42,7 @@ module.exports.insert_cust_data = () => {
         "${city}",
         "${state}",
         "${zip}",
+        "${phone}",
         "${email}",
         "${acct_date}",
         "${active}"
