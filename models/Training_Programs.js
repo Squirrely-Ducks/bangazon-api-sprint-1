@@ -66,16 +66,30 @@ module.exports.get_one_employees = (id) => {
 module.exports.get_employee_programs = (id) => {
     return new Promise((resolve, reject) => {
         db.all(`SELECT employee.first_name || " " || employee.last_name AS "employee", 
-        group_concat(training_program.name, ", ") AS "training_programs"
-        FROM employee_training
-        JOIN employee
-        ON employee.employee_id = employee_training.employee_id
-        JOIN training_program
-        ON training_program.training_id = employee_training.program_id
-        WHERE employee.employee_id = ${id}`, 
-        (err, program) => {
-            if (err) return reject(err);
-            resolve(program);
-        });
+            group_concat(training_program.name, ", ") AS "training_programs"
+            FROM employee_training
+            JOIN employee
+            ON employee.employee_id = employee_training.employee_id
+            JOIN training_program
+            ON training_program.training_id = employee_training.program_id
+            WHERE employee.employee_id = ${id}`, 
+            (err, program) => {
+                if (err) return reject(err);
+                resolve(program);
+            });
+    });
+};
+
+//DELETE TRAINING PROGRAM
+module.exports.delete_program = (id) => {
+    return new Promise((resolve, reject) => {
+        db.run(`DELETE FROM training_program
+            WHERE training_program.training_id = ${id}
+            AND date('now') < training_program.start_date`, function(err) {
+                if (err) reject(err);
+                this.changes === 0 ? 
+                resolve({"message":"Training Program has already begun and cannot be deleted."}) :
+                resolve();
+            });    
     });
 };
