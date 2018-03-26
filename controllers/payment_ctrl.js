@@ -27,10 +27,10 @@ module.exports.get_customer_payment = (req, res, next) => {
     let id = req.params.id;
     get_by_customer(id)
         .then((payments) => {
-            if (payments) {
+            if (payments.length>0) {
                 res.status(200).json(payments);
             } else {
-                let err = new Error('404: customer not found');
+                let err = new Error('404: no payments found for this customer');
                 next(err);
             }
         })
