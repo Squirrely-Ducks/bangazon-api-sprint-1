@@ -25,7 +25,6 @@ module.exports.add_computer = (req, res, next) => {
     let now = new Date().toISOString();
 
     req.body.purchase_date = now;
-    console.log(req.body, 'here');
     Computer.new_computer(req.body)
         .then((computer) => {
             res.status(200).json(computer);

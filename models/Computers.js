@@ -61,7 +61,6 @@ module.exports.update_computer = (id, column, value) => {
 
 
 module.exports.remove_computer = (id)=>{
-    console.log("hey");
     return new Promise((resolve,reject)=>{
         db.run(`DELETE FROM computer
                 WHERE computer_id = ${id}`,
