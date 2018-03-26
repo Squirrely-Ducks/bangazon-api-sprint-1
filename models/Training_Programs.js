@@ -83,6 +83,36 @@ module.exports.get_employee_programs = (id) => {
     });
 };
 
+//ADD TRAINING PROGRAM
+module.exports.new_training_program = ({name, start_date, end_date, capacity}) => {
+    return new Promise((resolve, reject) => {
+        db.run(`INSERT INTO training_program VALUES (
+            null,
+            "${name}",
+            "${start_date}",
+            "${end_date}",
+            ${capacity}
+        )`, function (err) {
+                if (err) reject(err);
+                resolve(this.lastID);
+            });
+    });
+};
+
+// EDIT TRAINING PROGRAM
+module.exports.update_training_program = (id, columns, values) => {
+    return new Promise((resolve, reject) => {
+        for (let i = 0; i < columns.length; i++) {
+            console.log(columns[i], values[i] );
+            db.run(`UPDATE training_program
+                SET "${columns[i]}" = "${values[i]}"
+                WHERE training_program.training_id = ${id}`, function (err, rows) {
+                    resolve(this.changes);
+                });
+        }
+    });
+};
+
 //DELETE TRAINING PROGRAM
 module.exports.delete_program = (id) => {
     return new Promise((resolve, reject) => {
