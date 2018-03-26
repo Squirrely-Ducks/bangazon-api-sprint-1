@@ -8,7 +8,7 @@ module.exports.build_employee_table = () => {
         db.serialize(() => {
             db.run('DROP TABLE IF EXISTS employee')
             .run(`CREATE TABLE IF NOT EXISTS employee (
-                employee_id INTEGER PRIMARY KEY,
+                emp_id INTEGER PRIMARY KEY,
                 department_id INTEGER,
                 first_name TEXT,
                 last_name TEXT,
