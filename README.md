@@ -128,8 +128,8 @@ http://localhost:4200/api/v1/computer/:id/edit
 - Enter into the body, any or all of the following values you would like to edit. Dummy data for example
 ```javascript
 {
-	"${purchase_date}": 2018-05-17T22:52:50.825Z,
-        "${trash_date}": 2019-05-17T21:52:50.825Z,
+	"${purchase_date}": "2018-05-17T22:52:50.825Z",
+        "${trash_date}": "2019-05-17T21:52:50.825Z",
          ${employee_id}): 6
 }
 ```
