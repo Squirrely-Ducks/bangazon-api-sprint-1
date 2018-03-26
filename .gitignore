@@ -4,3 +4,13 @@ package-lock.json
 .env
 db/squirrely_ducks.sqlite
 .vscode
+data/json/customers.json
+data/json/department.json
+data/json/employee.json
+data/json/employee_training.json
+data/json/order_product.json
+data/json/orders.json
+data/json/payment_type.json
+data/json/product_type.json
+data/json/products.json
+data/json/training_program.json
