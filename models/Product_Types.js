@@ -38,3 +38,36 @@ module.exports.new_prod_type = ({ type }) => {
             });
     });
 };
+
+module.exports.change_prod_type = (id, column, value) => {
+    return new Promise((resolve,reject)=>{
+        db.run(`UPDATE product_type
+                SET "${column}" = "${value}"
+                WHERE type_id = ${id}`,
+            function(err,row){
+                console.log(this.changes);
+                resolve(this.changes)
+            })
+    })
+}
+
+module.exports.delete_prod_type = (id) => {
+    return new Promise((resolve,reject)=>{
+        db.run(`DELETE FROM product_type
+                WHERE type_id = ${id}`,
+            function(err,prod){
+                resolve(this);
+            })
+    })
+}
+
+module.exports.get_prods = (id) => {
+    return new Promise((resolve,reject)=>{
+        db.all(`SELECT *
+                FROM product
+                WHERE type_id = ${id}`,
+            function(err,prod){
+                resolve(prod);
+            })
+    })
+}
