@@ -1,8 +1,7 @@
 const Employee = require('../models/Employees');
 
-module.exports.get_employees = ({ query: { supervisor } }, res, next) => {
-    const getEmployees = supervisor ? "get_supervisors" : "get_all";
-    Employee[getEmployees]()
+module.exports.get_employees = (req, res, next) => {
+    Employee.get_all()
         .then((employees) => {
             res.status(200).json(employees);
         })

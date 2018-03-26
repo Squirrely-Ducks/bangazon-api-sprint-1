@@ -10,15 +10,13 @@ module.exports.generate_employee = () => {
     let first_name = faker.name.firstName();
     let last_name = faker.name.lastName();
     let job_title = faker.name.jobTitle();
-    let is_supervisor = `${supCount<8 ? 1 : 0}`;
     
     employee.push({
       department_id,
       first_name,
       last_name,
-      job_title,
-      is_supervisor
-    });
+      job_title
+        });
   }
   return employee;
 };

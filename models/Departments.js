@@ -16,7 +16,7 @@ module.exports.get_one = (id) => {
     return new Promise((resolve, reject) => {
         db.get(`SELECT dept_id, dept_name, budget, (employee.first_name || " "|| employee.last_name) as supervisor  
         FROM department
-        JOIN employee on department_id = dept_id and is_supervisor=1
+        JOIN employee on supervisor_id = emp_id 
         WHERE dept_id = "${id}"`,
             (err, dept) => {
                 if (err) return reject(err);
@@ -26,16 +26,17 @@ module.exports.get_one = (id) => {
 }
 module.exports.get_department_employees = (id) => {
     return new Promise((resolve, reject) => {
-        db.get(`SELECT dept_name, group_concat(employee.first_name || ", "|| employee.last_name ) as employees  
+        db.get(`SELECT dept_name, group_concat(employee.first_name || " "|| employee.last_name) as employees  
         FROM department
-        JOIN employee on department_id = dept_id and is_supervisor=0
-        WHERE dept_id = "${id}"`,
+        JOIN employee on department_id = dept_id
+        WHERE dept_id = "${id}" and supervisor_id != emp_id`,
             (err, dept) => {
                 if (err) return reject(err);
                 resolve(dept);
             });
     });
 }
+
 module.exports.new_department = ({ dept_name, budget, supervisor_id }) => {
     return new Promise((resolve, reject) => {
         db.run(`INSERT INTO department VALUES(
@@ -50,18 +51,6 @@ module.exports.new_department = ({ dept_name, budget, supervisor_id }) => {
                 }
                 resolve(this.lastID);
             });
-    });
-}
-
-module.exports.get_employee_for_promotion = () => {
-    return new Promise((resolve, reject) => {
-        db.get(`SELECT employee_id FROM employee
-        WHERE is_supervisor=0`,
-            (err, emp) => {
-                if (err) return reject(err);
-                resolve(emp);
-            });
-
     });
 }
 

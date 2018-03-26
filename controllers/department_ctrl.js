@@ -6,8 +6,7 @@ module.exports.get_departments = (req, res, next) => {
     Department.get_all()
         .then((depts) => {
             res.status(200).json(depts);
-        })
-        .catch((err) => next(err));
+        }).catch((err) => next(err));
 }
 
 module.exports.get_one_department = (req, res, next) => {
@@ -19,8 +18,7 @@ module.exports.get_one_department = (req, res, next) => {
             } else {
                 let err = new Error('404: department not found');
             }
-        })
-        .catch((err) => next(err));
+        }) .catch((err) => next(err));
 }
 
 module.exports.get_employees = (req, res, next) => {
@@ -33,30 +31,17 @@ module.exports.get_employees = (req, res, next) => {
                 let err = new Error('404: department employees not found');
                 next(err);
             }
-        })
-        .catch((err) => next(err));
+        }).catch((err) => next(err));
 }
 
 module.exports.add_department = (req, res, next) => {
-    Department.get_non_supervisor_employee()
-        .then((emp) => {
-            let sup_id = Object.values(emp);
-            req.body.supervisor_id = sup_id;
-            update_employee(sup_id, "is_supervisor", "1")
-                .then((employee) => {
-                    res.status(200).json(employee);
-                }).catch((err) => next(err));
-
-            Department.new_department(req.body)
-                .then((department) => {
-                    update_employee(sup_id, department_id, deparment)
-                        .then((employee) => {
-                            res.status(200).json(employee);
-                        }).catch((err) => next(err));
-
-                    res.status(200).json(department);
-                }).catch((err) => next(err));
-
+    Department.new_department(req.body)
+        .then((department) => {
+            let sup_id = req.body.supervisor_id
+            res.status(200).json(department);
+            return update_employee(sup_id, 'department_id', department);
+        }).then((supervisor) => {
+            res.status(200).json(supervisor);
         }).catch((err) => next(err));
 }
 

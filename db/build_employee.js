@@ -8,12 +8,11 @@ module.exports.build_employee_table = () => {
         db.serialize(() => {
             db.run('DROP TABLE IF EXISTS employee')
             .run(`CREATE TABLE IF NOT EXISTS employee (
-                employee_id INTEGER PRIMARY KEY,
+                emp_id INTEGER PRIMARY KEY,
                 department_id INTEGER,
                 first_name TEXT,
                 last_name TEXT,
                 job_title TEXT,
-                is_supervisor INT,
                 FOREIGN KEY (department_id) REFERENCES department(dept_id)
             )`, (err) => {
                 if (err) throw err;
@@ -25,14 +24,13 @@ module.exports.build_employee_table = () => {
 
 module.exports.insert_employee_data = () => {
     return new Promise((resolve, reject) => {
-        employee_data.forEach(( {department_id, first_name, last_name, job_title, is_supervisor} ) => {
+        employee_data.forEach(( {department_id, first_name, last_name, job_title} ) => {
             db.run(`INSERT INTO employee VALUES (
                 ${null},
                 ${department_id},
                 "${first_name}",
                 "${last_name}",
-                "${job_title}",
-                "${is_supervisor}"
+                "${job_title}"
             )`, (err) => {
                 if (err) reject(err);
                 resolve();
