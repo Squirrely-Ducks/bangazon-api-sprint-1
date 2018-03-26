@@ -149,6 +149,49 @@ If null is returned, employee has not enrolled in training programs.
 * PUT
 * DELETE(only if date is in future)
 
+#### POST new training program
+1. To add a new program, use the following path:
+```javascript
+http://localhost:4200/api/v1/training_programs/new
+```
+- Enter data into the body, for example:
+```javascript
+{
+	"name": "Whats a computer 101?",
+	"start_date": "2018-05-17T22:52:50.825Z",
+	"end_date":"2019-04-19T09:52:57.063Z", 
+	"capacity": 20
+}
+```
+- Check database, if program has been posted.
+
+#### PUT edit training program
+
+1. Edit program information, choose desired training program id and use the following path:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id/edit
+```
+- Enter into the body, any or all of the following values you would like to edit. Dummy data for example
+```javascript
+{
+	"name": "Whats a comp?",
+	"start_date": "2019-05-17T22:52:50.825Z",
+	"end_date":"2020-04-19T09:52:57.063Z", 
+	"capacity": 10
+}
+```
+- Check database to see if data has updated
+
+#### DELETE a training program
+
+4. To delete training programs,  choose desired training program id and enter the following link into Postman with select id:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id/delete
+```
+- Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.
+
+
+
 
 
 
