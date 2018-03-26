@@ -9,7 +9,7 @@ module.exports.get_all = () => {
                 if (err) return reject(err);
                 resolve(emp)
             });
-    })
+    });
 };
 
 module.exports.get_one = (id) => {
@@ -28,7 +28,6 @@ module.exports.get_one = (id) => {
 
 module.exports.get_supervisors = () => {
     return new Promise((resolve, reject) => {
-        console.log('hello');
         db.all(`SELECT (first_name || " "|| last_name) as name, job_title,  department.dept_name department_name
         FROM employee
         JOIN department ON dept_id = department_id
@@ -41,29 +40,28 @@ module.exports.get_supervisors = () => {
 }
 
 
-module.exports.new_employee = ({ department_id, first_name, last_name, job_title, is_supervisor }) => {
+module.exports.new_employee = ({ department_id, first_name, last_name, job_title }) => {
     return new Promise((resolve, reject) => {
         db.run(`INSERT INTO employee VALUES (
             null,
             ${department_id},
             "${first_name}",
             "${last_name}",
-            "${job_title}",
-            ${is_supervisor})`, function (err, emp) {
+            "${job_title}"`, function (err, emp) {
                 if (err) {
                     console.log(err);
                     reject(err);
                 }
-                resolve(emp, this.lastID);
+                resolve(this.lastID);
             });
     });
 }
 
-module.exports.update_employeee = (id,  column, value ) => {
+module.exports.update_employee = (id,  column, value ) => {
     return new Promise((resolve, reject) => {
         db.run(`UPDATE employee
             SET "${column}" = "${value}"
-            WHERE employee_id=${id}`, function (err, rows) {
+            WHERE emp_id=${id}`, function (err, rows) {
                 resolve(this.changes);
             });
     });

@@ -44,6 +44,34 @@ module.exports.new_products = ({ title, price, description, type_id, seller_id }
 
                 }
                 resolve(product, this.lastID)
-            });
+            })
+    })
+}
+
+//EDIT Product
+module.exports.update_product = (id, columns, values) => {
+    return new Promise((resolve, reject) => {
+        for (let i = 0; i < columns.length; i++) {
+            db.run(`UPDATE product
+                SET "${columns[i]}" = "${values[i]}"
+                WHERE product.prod_id = ${id}`, 
+                function (err, rows) {
+                    resolve(this.changes);
+                });
+        }
+    });
+};
+
+// DELETE Product
+module.exports.remove_product = (id) => {
+    console.log('ID', id );
+    return new Promise((resolve, reject) => {
+        db.run(`DELETE FROM product
+            WHERE product.prod_id = ${id}`,
+            function(err) {
+                if(err) reject(err);
+
+                resolve({"message": `${this.changes} product has been deleted`});
+        });
     });
 };

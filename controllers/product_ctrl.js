@@ -1,4 +1,4 @@
-const { get_all, get_one, new_products }= require('../models/Products');
+const { get_all, get_one, new_products, update_product, remove_product }= require('../models/Products');
 
 // method for getting all products from the data base 
 module.exports.get_products = (req, res, next ) => {
@@ -30,4 +30,26 @@ module.exports.add_products = (req, res, next ) => {
     .then((product) =>{
         res.status(200).json(product);
     }).catch((err) => next(err))
+}
+
+//Edit Products
+module.exports.edit_product = (req, res, next) => {
+    console.log('check');
+    let id = req.params.id;
+    let columns = Object.keys(req.body);
+    let values = Object.values(req.body);
+    update_product(id, columns, values)
+    .then((product) => {
+        res.status(200).json(product);
+    })
+    .catch((err) => next(err));
+};
+
+module.exports.delete_product = (req, res, next) => {
+    let id = req.params.id;
+    console.log('CTRL', id );
+    remove_product(id)
+    .then((id) => {
+        res.status(200).json(id);
+    });
 };

@@ -1,1 +1,37 @@
-[{"dept_name":"feed capacitor","budget":58149,"supervisor_id":"72786733"},{"dept_name":"withdrawal","budget":22141,"supervisor_id":"57289937"},{"dept_name":"gold Face to face Assurance","budget":805,"supervisor_id":"51278447"},{"dept_name":"orchid Table","budget":85337,"supervisor_id":"17891018"},{"dept_name":"SQL functionalities niches","budget":92096,"supervisor_id":"25610344"},{"dept_name":"Keyboard violet","budget":75586,"supervisor_id":"87684581"},{"dept_name":"Awesome Granite Hat","budget":87865,"supervisor_id":"19492031"}]
+[
+    {
+        "dept_name": "Product withdrawal Markets",
+        "budget": 90325,
+        "supervisor_id": 1
+    },
+    {
+        "dept_name": "payment Investor",
+        "budget": 26330,
+        "supervisor_id": 2
+    },
+    {
+        "dept_name": "Bedfordshire",
+        "budget": 39116,
+        "supervisor_id": 3
+    },
+    {
+        "dept_name": "plug-and-play",
+        "budget": 93345,
+        "supervisor_id": 4
+    },
+    {
+        "dept_name": "system engine Officer Bedfordshire",
+        "budget": 17423,
+        "supervisor_id": 5
+    },
+    {
+        "dept_name": "AI foreground Fresh",
+        "budget": 88189,
+        "supervisor_id": 6
+    },
+    {
+        "dept_name": "Human system Electronics",
+        "budget": 54550,
+        "supervisor_id": 7
+    }
+]
