@@ -42,33 +42,33 @@ To begin enter the following command to initialize the server `nodemon app.js`
 
 ### PRODUCTS
 * GET all products
-    ** To access all products enter address `/products`
+    * To access all products enter address `/products`
 * GET single product by product_id
-    ** To access a single product by product_ID `/products/:id`
+    * To access a single product by product_ID `/products/:id`
 * POST
-    ** To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
+    * To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:```{
                                 "title": "new info",
                                 "price": new info,
                                 "description": "new info",
                                 "type_id": new info,
                                 "seller_id": new info
-                            }
+                            }```
 * PUT
 * DELETE
 
 ### PAYMENT TYPE
 * GET all payment types
-    ** To get all customers add `/payment` to the URL
+    * To get all customers add `/payment` to the URL
 * GET single payment type by type ID
-    ** To get a single payment type add `/payment/type/:id` to the URL
+    * To get a single payment type add `/payment/type/:id` to the URL
 * GET single payment type by customer ID
-    ** To get a single payment type add `/payment/customer/:id` to the URL
+    * To get a single payment type add `/payment/customer/:id` to the URL
 * POST
-    ** To post a new payment type, use the URL(in Postman or something similar) `/payment/new` to post a new object with the following keys:{ 
+    * To post a new payment type, use the URL(in Postman or something similar) `/payment/new` to post a new object with the following keys:```{ 
                                 'customer_id': new info,
                                 'type': new info,
                                 'account_number': new info
-                            }
+                            }```
 * PUT
 * DELETE
 
@@ -90,9 +90,9 @@ To begin enter the following command to initialize the server `nodemon app.js`
 * GET all employees
     ** To get all customers add `/employees` to the URL
 * GET single employee
-    ** To get a single customer by id add `/employees/:id` to the URL
+    * To get a single customer by id add `/employees/:id` to the URL
 * POST
-    ** To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
+    * To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
                                 "deparment_id": new info,
                                 "first_name": "new info",
                                 "last_name": "new info",
@@ -116,8 +116,82 @@ To begin enter the following command to initialize the server `nodemon app.js`
 * DELETE
 
 ### TRAINING PROGRAMS
-* GET all training programs
-* GET single training program
+#### GET all training programs:
+1. To get list of all training programs:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id
+```
+
+2. To get list of training programs with enrolled employees:
+```javascript
+http://localhost:4200/api/v1/training_programs/employees
+```
+
+#### GET single training program
+1. To get one training program:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id
+```
+
+2. To get one training program with enrolled employees:
+```javascript
+http://localhost:4200/api/v1/training_programs/program/:id
+```
+If null is returned, program does not have enrolled employees.
+
+3. To get list of enrolled training programs by one employee:
+```javascript
+http://localhost:4200/api/v1/training_programs/program/:id
+```
+If null is returned, employee has not enrolled in training programs.
+
 * POST
 * PUT
 * DELETE(only if date is in future)
+
+#### POST new training program
+1. To add a new program, use the following path:
+```javascript
+http://localhost:4200/api/v1/training_programs/new
+```
+- Enter data into the body, for example:
+```javascript
+{
+	"name": "Whats a computer 101?",
+	"start_date": "2018-05-17T22:52:50.825Z",
+	"end_date":"2019-04-19T09:52:57.063Z", 
+	"capacity": 20
+}
+```
+- Check database, if program has been posted.
+
+#### PUT edit training program
+
+1. Edit program information, choose desired training program id and use the following path:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id/edit
+```
+- Enter into the body, any or all of the following values you would like to edit. Dummy data for example
+```javascript
+{
+	"name": "Whats a comp?",
+	"start_date": "2019-05-17T22:52:50.825Z",
+	"end_date":"2020-04-19T09:52:57.063Z", 
+	"capacity": 10
+}
+```
+- Check database to see if data has updated
+
+#### DELETE a training program
+
+4. To delete training programs,  choose desired training program id and enter the following link into Postman with select id:
+```javascript
+http://localhost:4200/api/v1/training_programs/:id/delete
+```
+- Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.
+
+
+
+
+
+

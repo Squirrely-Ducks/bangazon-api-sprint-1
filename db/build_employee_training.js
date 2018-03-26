@@ -10,8 +10,12 @@ module.exports.build_employee_training_table = () => {
             .run(`CREATE TABLE IF NOT EXISTS employee_training (
                 employee_id INTEGER,
                 program_id INTEGER,
-                FOREIGN KEY (employee_id) REFERENCES employee(employee_id),
-                FOREIGN KEY (program_id) REFERENCES training_program(training_id)
+                FOREIGN KEY (employee_id) 
+                    REFERENCES employee(employee_id)
+                    ON DELETE CASCADE,
+                FOREIGN KEY (program_id) 
+                    REFERENCES training_program(training_id) 
+                    ON DELETE CASCADE
             )`, (err) => {
                 if (err) reject(err);
                 resolve();
