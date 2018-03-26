@@ -129,7 +129,7 @@ http://localhost:4200/api/v1/computer/:id/edit
 ```javascript
 {
 	"${purchase_date}": 2018-05-17T22:52:50.825Z,
-        "${trash_date}": 2019-05-17T22:52:50.825Z,
+        "${trash_date}": 2019-05-17T21:52:50.825Z,
          ${employee_id}): 6
 }
 ```
