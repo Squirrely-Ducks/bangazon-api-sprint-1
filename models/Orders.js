@@ -47,3 +47,26 @@ module.exports.new_orders = ({ customer_id, payment_type_id, product_id, order_d
             });
     });
 };
+
+// method that returns a promise that puts a new order to the data base
+module.exports.update_order = (id, column, value) => {
+    return new Promise((resolve, reject) => {
+        db.run(`UPDATE orders
+                SET "${column}" = "${value}"
+                WHERE payment_type_id = ${id}`,
+            function (err, rows) {
+                resolve(this.changes);
+            });
+    });
+};
+
+// method that returns a promise that deletes an order from the data base 
+module.exports.delete_payment = (id) => {
+    return new Promise((resolve, reject) => {
+        db.run(`DELETE FROM orders
+                WHERE order_id = ${id}`,
+            function (err, column) {
+                resolve(this.lastID);
+            });
+    });
+};
