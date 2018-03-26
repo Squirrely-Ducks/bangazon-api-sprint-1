@@ -1,4 +1,5 @@
-const { get_all, get_by_type, get_by_customer, new_payment } = require('../models/Payments');
+
+const { get_all, get_by_type, get_by_customer, new_payment, update_payment } = require('../models/Payments');
 
 module.exports.get_payments = (req, res, next) => {
     get_all()
@@ -41,4 +42,12 @@ module.exports.add_payment = (req, res, next) => {
         .then((payment) => {
             res.status(200).json(payment);
         }).catch((err) => next(err));
+}
+
+module.exports.edit_payment = (req,res,next)=>{
+    let id = req.params.id;
+    update_payment(id, Object.keys(req.body), Object.values(req.body))
+    .then((payment)=>{
+        res.status(200).json(payment);
+    }).catch((err) => next(err));
 }

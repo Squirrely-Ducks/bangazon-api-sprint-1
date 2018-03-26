@@ -57,3 +57,13 @@ module.exports.new_payment = ({ customer_id, type, account_number}) => {
             });
     });
 }
+
+module.exports.update_payment = (id, column, value)=>{
+    return new Promise((resolve,reject)=>{
+        db.run(`UPDATE payment_type
+                SET "${column}" = "${value}"
+                WHERE payment_type_id = ${id}`,function(err,rows){
+                    resolve(this.changes);
+                });
+    });
+}
