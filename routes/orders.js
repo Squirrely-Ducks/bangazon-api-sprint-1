@@ -6,3 +6,5 @@ const {get_orders, get_one_order, add_order }= require('../controllers/order_ctr
 orderRouter.get('/orders', get_orders);
 orderRouter.get('/orders/:id', get_one_order);
 orderRouter.post('/order/new', add_order);
+
+module.exports = orderRouter;

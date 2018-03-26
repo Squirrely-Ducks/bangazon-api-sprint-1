@@ -33,10 +33,10 @@ module.exports.new_orders = ({ customer_id, payment_type_id, product_id, order_d
     return new Promise((resolve, reject) => {
         db.run(` INSERT INTO orders VALUES (
             null,
-            "${customer_id}",
-            "${payment_type_id}",
-            "${product_id}",
-            ${order_date},
+            ${customer_id},
+            ${payment_type_id},
+            ${product_id},
+            "${order_date}",
             ${completed}) `, function (err, order) {
                 if (err) {
                     console.log(err);
