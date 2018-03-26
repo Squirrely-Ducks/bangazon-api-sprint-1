@@ -58,3 +58,14 @@ module.exports.update_computer = (id, column, value) => {
             });
     });
 }
+
+
+module.exports.remove_computer = (id)=>{
+    return new Promise((resolve,reject)=>{
+        db.run(`DELETE FROM computer
+                WHERE computer_id = ${id}`,
+            function(err, column){
+                resolve(column);
+            });
+    });
+}
