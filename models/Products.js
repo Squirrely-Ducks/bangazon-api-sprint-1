@@ -44,6 +44,6 @@ module.exports.new_products = ({ title, price, description, type_id, seller_id }
 
                 }
                 resolve(product, this.lastID)
-            })
-    })
-}
+            });
+    });
+};
