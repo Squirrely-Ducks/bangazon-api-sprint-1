@@ -52,7 +52,6 @@ module.exports.get_employee_programs_list = (req, res, next) => {
 module.exports.add_training_program = (req, res, next) => {
     new_training_program(req.body)
         .then((program) => {
-            console.log('Program: ', program );
             res.status(200).json(program);
         }).catch((err) => next(err));
 };

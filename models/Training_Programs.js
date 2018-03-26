@@ -103,7 +103,6 @@ module.exports.new_training_program = ({name, start_date, end_date, capacity}) =
 module.exports.update_training_program = (id, columns, values) => {
     return new Promise((resolve, reject) => {
         for (let i = 0; i < columns.length; i++) {
-            console.log(columns[i], values[i] );
             db.run(`UPDATE training_program
                 SET "${columns[i]}" = "${values[i]}"
                 WHERE training_program.training_id = ${id}`, function (err, rows) {
