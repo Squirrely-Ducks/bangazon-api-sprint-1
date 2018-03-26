@@ -39,3 +39,11 @@ module.exports.edit_computer = (req, res, next) => {
             res.status(200).json(computer);
         }).catch((err) => next(err));
 } 
+
+module.exports.delete_computer = (req, res, next)=>{
+    let id = req.params.id
+    Computer.remove_computer(id)
+    .then((computer)=>{
+        res.status(200).json(computer)
+    }).catch((err)=> next((err)));
+}
