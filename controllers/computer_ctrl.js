@@ -25,7 +25,6 @@ module.exports.add_computer = (req, res, next) => {
     let now = new Date().toISOString();
 
     req.body.purchase_date = now;
-    console.log(req.body, 'here');
     Computer.new_computer(req.body)
         .then((computer) => {
             res.status(200).json(computer);
@@ -39,3 +38,11 @@ module.exports.edit_computer = (req, res, next) => {
             res.status(200).json(computer);
         }).catch((err) => next(err));
 } 
+
+module.exports.delete_computer = (req, res, next)=>{
+    let id = req.params.id
+    Computer.remove_computer(id)
+    .then((computer)=>{
+        res.status(200).json(computer)
+    }).catch((err)=> next((err)));
+}
