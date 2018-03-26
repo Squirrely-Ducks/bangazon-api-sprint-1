@@ -200,7 +200,7 @@ http://localhost:4200/api/v1/training_programs/:id/edit
 {
 	"name": "Whats a comp?",
 	"start_date": "2019-05-17T22:52:50.825Z",
-	"end_date":"2020-04-19T09:52:57.063Z", 
+	"end_date":"2020-04-19T09:50:57.063Z", 
 	"capacity": 10
 }
 ```
