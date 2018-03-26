@@ -16,7 +16,7 @@ module.exports.build_department_table = () => {
                 dept_name TEXT, 
                 budget INTEGER,
                 supervisor_id INTEGER, 
-                FOREIGN KEY (supervisor_id) REFERENCES employee(supervisor_id)    
+                FOREIGN KEY (supervisor_id) REFERENCES employee(emp_id)    
         )`, () => {
                 resolve();
             })
