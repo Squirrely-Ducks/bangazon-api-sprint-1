@@ -50,3 +50,16 @@ module.exports.new_customer = ({ first_name, last_name, street, city, state, zip
             });
     });
 }
+
+// method to get customers who have not placed and order yet
+module.exports.not_active = () => {
+    return new Promise((resolve, reject) => {
+        db.all(`SELECT * 
+        FROM customer
+                WHERE active = 0`,
+            (err, cust) => {
+                if (err) return reject(err);
+                resolve(cust)
+            })
+    })
+}

@@ -1,8 +1,7 @@
 const Employee = require('../models/Employees');
 
-module.exports.get_employees = ({ query: { supervisor } }, res, next) => {
-    const getEmployees = supervisor ? "get_supervisors" : "get_all";
-    Employee[getEmployees]()
+module.exports.get_employees = (req, res, next) => {
+    Employee.get_all()
         .then((employees) => {
             res.status(200).json(employees);
         })
@@ -31,7 +30,7 @@ module.exports.add_employee = (req, res, next) => {
 
 module.exports.edit_employee = (req, res, next) => {
     let id = req.params.id;
-    Employee.update_employeee(id, Object.keys(req.body), Object.values(req.body))
+    Employee.update_employee(id, Object.keys(req.body), Object.values(req.body))
         .then((employee) => {
             res.status(200).json(employee);
         }).catch((err) => next(err));
