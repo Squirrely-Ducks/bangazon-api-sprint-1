@@ -1,5 +1,5 @@
 
-const { get_all, get_by_type, get_by_customer, new_payment, update_payment } = require('../models/Payments');
+const { get_all, get_by_type, get_by_customer, new_payment, update_payment, delete_payment } = require('../models/Payments');
 
 module.exports.get_payments = (req, res, next) => {
     get_all()
@@ -50,4 +50,12 @@ module.exports.edit_payment = (req,res,next)=>{
     .then((payment)=>{
         res.status(200).json(payment);
     }).catch((err) => next(err));
+}
+
+module.exports.payment_deleted = (req,res,next)=>{
+    let id = req.params.id;
+    delete_payment(id)
+    .then((payment)=>{
+        res.status(200).json(payment);
+    }).catch((err)=> next(err));
 }
