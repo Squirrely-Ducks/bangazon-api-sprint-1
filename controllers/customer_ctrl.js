@@ -1,7 +1,8 @@
-const { get_all, get_one, new_customer, not_active } = require('../models/Customers');
+const Customer = require('../models/Customers');
 
-module.exports.get_customers = (req, res, next) => {
-    get_all()
+module.exports.get_customers = ({ query: { inactive } }, res, next) => {
+    const getCustomers = inactive ? "not_active" : "get_all";
+    Customer[getCustomers]()
         .then((customers) => {
             res.status(200).json(customers);
         })
@@ -10,7 +11,7 @@ module.exports.get_customers = (req, res, next) => {
 
 module.exports.get_one_customer = (req, res, next) => {
     let id = req.params.id
-    get_one(id)
+    Customer.get_one(id)
         .then((customer) => {
             if (customer) {
                 res.status(200).json(customer);
@@ -22,18 +23,9 @@ module.exports.get_one_customer = (req, res, next) => {
         .catch((err) => next(err));
 }
 
-module.exports.add_customer = (req, res, next) => { 
-    new_customer(req.body)
+module.exports.add_customer = (req, res, next) => {
+    Customer.new_customer(req.body)
         .then((customer) => {
             res.status(200).json(customer);
         }).catch((err) => next(err));
-}
-
-// method executing not active 
-module.exports.view_non_active = (req, res, next ) => {
-    not_active()
-        .then((customers) =>{
-            res.status(200).json(customers);
-        })
-        .catch((err) => next(err));
 }
