@@ -47,9 +47,7 @@ module.exports.edit_order = (req, res, next) => {
 
 // method requiring the delete order method using delete to remove from the data base 
 module.exports.order_deleted = (req, res, next) => {
-    console.log('working');
     let id = req.params.id;
-    
     delete_order(id)
         .then((order) => {
             res.status(200).json(order);

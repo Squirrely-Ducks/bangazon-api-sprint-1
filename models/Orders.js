@@ -63,9 +63,7 @@ module.exports.update_order = (id, column, value) => {
 // method that returns a promise that deletes an order from the data base 
 module.exports.delete_order = (id) => {
     return new Promise((resolve, reject) => {
-        console.log('is this here' );
-        
-        db.run(`DELETE FROM orders
+            db.run(`DELETE FROM orders
                 WHERE order_id = ${id}`,
             function (err, column) {
                 resolve(column);
