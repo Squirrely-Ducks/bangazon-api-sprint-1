@@ -1,0 +1,37 @@
+[
+    {
+        "dept_name": "Product withdrawal Markets",
+        "budget": 90325,
+        "supervisor_id": 1
+    },
+    {
+        "dept_name": "payment Investor",
+        "budget": 26330,
+        "supervisor_id": 2
+    },
+    {
+        "dept_name": "Bedfordshire",
+        "budget": 39116,
+        "supervisor_id": 3
+    },
+    {
+        "dept_name": "plug-and-play",
+        "budget": 93345,
+        "supervisor_id": 4
+    },
+    {
+        "dept_name": "system engine Officer Bedfordshire",
+        "budget": 17423,
+        "supervisor_id": 5
+    },
+    {
+        "dept_name": "AI foreground Fresh",
+        "budget": 88189,
+        "supervisor_id": 6
+    },
+    {
+        "dept_name": "Human system Electronics",
+        "budget": 54550,
+        "supervisor_id": 7
+    }
+]
