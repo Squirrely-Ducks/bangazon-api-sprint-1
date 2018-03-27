@@ -13,9 +13,11 @@ module.exports.build_order_table = () => {
         (order_id INTEGER PRIMARY KEY,
         customer_id INT,
         payment_type_id INT, 
+        product_id INT,
         order_date TEXT, 
         completed INT,
         FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
+        FOREIGN KEY (product_id) REFERENCES product (product_id) ,
         FOREIGN KEY (payment_type_id) REFERENCES payment_type (type_id)) `,
             () => {
                 resolve("done");
@@ -32,6 +34,7 @@ module.exports.insert_order_data = () => {
         VALUES (${null}, 
           ${customer_id}, 
           ${payment_type_id}, 
+          ${product_id}, 
           "${order_date}", 
           ${completed})`,
                 () => {
