@@ -55,8 +55,6 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	                    "active": 0
   }
   ```
-* PUT
-	* To Edit 
 
 ### PRODUCTS
 * GET all products
