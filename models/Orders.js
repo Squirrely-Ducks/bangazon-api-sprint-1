@@ -31,7 +31,6 @@ module.exports.get_one = (id) => {
 // method returning a promise that queries and selects a products belonging to an order from the database
 module.exports.get_order_prods = (id) => {
     return new Promise((resolve, reject) => {
-        console.log(id, 'what');
         db.all(`SELECT prod_id, title, price, description, type_id, seller_id
         FROM order_product
         JOIN product on product_id = prod_id

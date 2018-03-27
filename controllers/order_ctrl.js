@@ -30,7 +30,7 @@ module.exports.get_one_order = (req, res, next) => {
 module.exports.get_order_products = (req, res, next) => {
     get_order_prods(req.params.id)
         .then((order_products) => {
-            if (order_product) {
+            if (order_products) {
                 res.status(200).json(order_products);
             } else {
                 let err = new Error(`404: There are no products on this order`);
