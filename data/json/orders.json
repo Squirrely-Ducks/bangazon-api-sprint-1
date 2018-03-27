@@ -2,120 +2,140 @@
     {
         "customer_id": 258,
         "payment_type_id": 4,
+        "product_id": 9,
         "order_date": "2017-10-04T19:07:13.269Z",
         "completed": 1
     },
     {
         "customer_id": 59,
         "payment_type_id": 4,
+        "product_id": 26,
         "order_date": "2017-09-16T01:41:32.050Z",
         "completed": 0
     },
     {
         "customer_id": 206,
         "payment_type_id": 4,
+        "product_id": 23,
         "order_date": "2018-02-14T10:14:48.912Z",
         "completed": 0
     },
     {
         "customer_id": 469,
         "payment_type_id": 2,
+        "product_id": 13,
         "order_date": "2017-04-13T16:25:46.647Z",
         "completed": 1
     },
     {
         "customer_id": 147,
         "payment_type_id": 4,
+        "product_id": 10,
         "order_date": "2017-10-20T02:51:25.530Z",
         "completed": 1
     },
     {
         "customer_id": 72,
         "payment_type_id": 2,
+        "product_id": 29,
         "order_date": "2017-07-11T04:44:04.238Z",
         "completed": 1
     },
     {
         "customer_id": 222,
         "payment_type_id": 2,
+        "product_id": 21,
         "order_date": "2018-02-05T04:14:50.267Z",
         "completed": 1
     },
     {
         "customer_id": 142,
         "payment_type_id": 4,
+        "product_id": 22,
         "order_date": "2017-12-26T06:49:32.431Z",
         "completed": 0
     },
     {
         "customer_id": 229,
         "payment_type_id": 4,
+        "product_id": 14,
         "order_date": "2017-12-21T01:28:51.179Z",
         "completed": 0
     },
     {
         "customer_id": 318,
         "payment_type_id": 1,
+        "product_id": 11,
         "order_date": "2017-09-13T23:56:46.392Z",
         "completed": 0
     },
     {
         "customer_id": 35,
         "payment_type_id": 4,
+        "product_id": 15,
         "order_date": "2017-06-05T15:23:14.815Z",
         "completed": 1
     },
     {
         "customer_id": 362,
         "payment_type_id": 3,
+        "product_id": 2,
         "order_date": "2017-05-21T14:22:33.839Z",
         "completed": 0
     },
     {
         "customer_id": 295,
         "payment_type_id": 2,
+        "product_id": 2,
         "order_date": "2017-10-16T12:39:04.198Z",
         "completed": 0
     },
     {
         "customer_id": 376,
         "payment_type_id": 1,
+        "product_id": 19,
         "order_date": "2017-08-01T10:55:38.646Z",
         "completed": 0
     },
     {
         "customer_id": 165,
         "payment_type_id": 1,
+        "product_id": 11,
         "order_date": "2017-09-08T15:51:22.916Z",
         "completed": 0
     },
     {
         "customer_id": 172,
         "payment_type_id": 4,
+        "product_id": 1,
         "order_date": "2018-02-04T00:09:37.930Z",
         "completed": 0
     },
     {
         "customer_id": 335,
         "payment_type_id": 3,
+        "product_id": 21,
         "order_date": "2017-06-12T14:04:21.847Z",
         "completed": 1
     },
     {
         "customer_id": 194,
         "payment_type_id": 4,
+        "product_id": 4,
         "order_date": "2018-02-28T18:14:25.715Z",
         "completed": 0
     },
     {
         "customer_id": 8,
         "payment_type_id": 2,
+        "product_id": 11,
         "order_date": "2017-04-21T22:08:52.502Z",
         "completed": 1
     },
     {
         "customer_id": 471,
         "payment_type_id": 5,
+        "product_id": 16,
         "order_date": "2017-12-09T19:53:32.750Z",
         "completed": 1
     }
