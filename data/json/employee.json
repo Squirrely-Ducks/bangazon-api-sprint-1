@@ -1,0 +1,352 @@
+[
+    {
+        "department_id": "1",
+        "first_name": "Elmira",
+        "last_name": "Kilback",
+        "job_title": "Senior Accounts Planner",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "2",
+        "first_name": "Kristian",
+        "last_name": "Denesik",
+        "job_title": "Forward Tactics Supervisor",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Demarcus",
+        "last_name": "Goldner",
+        "job_title": "Dynamic Division Orchestrator",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "4",
+        "first_name": "Agustin",
+        "last_name": "Tromp",
+        "job_title": "Product Applications Facilitator",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Maudie",
+        "last_name": "Jaskolski",
+        "job_title": "National Intranet Representative",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Julio",
+        "last_name": "MacGyver",
+        "job_title": "Dynamic Mobility Assistant",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Katharina",
+        "last_name": "Schowalter",
+        "job_title": "Dynamic Optimization Administrator",
+        "is_supervisor": "1"
+    },
+    {
+        "department_id": "4",
+        "first_name": "Cleve",
+        "last_name": "Gaylord",
+        "job_title": "Investor Solutions Orchestrator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "1",
+        "first_name": "Bryce",
+        "last_name": "Feest",
+        "job_title": "Lead Interactions Designer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Pat",
+        "last_name": "Johnston",
+        "job_title": "Principal Research Producer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Geo",
+        "last_name": "Marquardt",
+        "job_title": "Senior Implementation Liaison",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Eden",
+        "last_name": "Veum",
+        "job_title": "Principal Optimization Specialist",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Thea",
+        "last_name": "Rau",
+        "job_title": "District Metrics Technician",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Tamara",
+        "last_name": "Barrows",
+        "job_title": "Customer Accountability Orchestrator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Samir",
+        "last_name": "Koepp",
+        "job_title": "District Creative Representative",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Shanny",
+        "last_name": "Halvorson",
+        "job_title": "Corporate Directives Agent",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "4",
+        "first_name": "Annabell",
+        "last_name": "Littel",
+        "job_title": "Senior Tactics Analyst",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Carmella",
+        "last_name": "Olson",
+        "job_title": "Senior Research Manager",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Elvis",
+        "last_name": "Lueilwitz",
+        "job_title": "Direct Marketing Developer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Harmony",
+        "last_name": "VonRueden",
+        "job_title": "Principal Accounts Agent",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Davion",
+        "last_name": "Paucek",
+        "job_title": "Chief Usability Specialist",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Garrison",
+        "last_name": "Howe",
+        "job_title": "Dynamic Interactions Orchestrator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Granville",
+        "last_name": "Hyatt",
+        "job_title": "Product Interactions Director",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Shaun",
+        "last_name": "Schmeler",
+        "job_title": "International Program Technician",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Jarrett",
+        "last_name": "Donnelly",
+        "job_title": "Regional Operations Strategist",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "1",
+        "first_name": "Burley",
+        "last_name": "Ruecker",
+        "job_title": "District Solutions Facilitator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Greg",
+        "last_name": "Batz",
+        "job_title": "Global Tactics Technician",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "2",
+        "first_name": "Alvina",
+        "last_name": "Braun",
+        "job_title": "Legacy Accountability Liaison",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "2",
+        "first_name": "Austyn",
+        "last_name": "Bernier",
+        "job_title": "Regional Directives Designer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Amira",
+        "last_name": "Parker",
+        "job_title": "District Implementation Planner",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Alvina",
+        "last_name": "Dicki",
+        "job_title": "Lead Markets Developer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Autumn",
+        "last_name": "Metz",
+        "job_title": "Dynamic Web Representative",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Judson",
+        "last_name": "Heaney",
+        "job_title": "Product Division Engineer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "1",
+        "first_name": "Rickie",
+        "last_name": "Trantow",
+        "job_title": "Legacy Program Orchestrator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "4",
+        "first_name": "Kaia",
+        "last_name": "Waelchi",
+        "job_title": "Chief Identity Administrator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "4",
+        "first_name": "Mireille",
+        "last_name": "Bechtelar",
+        "job_title": "Customer Metrics Architect",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Summer",
+        "last_name": "Cartwright",
+        "job_title": "Senior Solutions Technician",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "2",
+        "first_name": "Chaz",
+        "last_name": "Tremblay",
+        "job_title": "Investor Configuration Agent",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "1",
+        "first_name": "Moriah",
+        "last_name": "Bogan",
+        "job_title": "District Markets Executive",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Shawn",
+        "last_name": "Wisozk",
+        "job_title": "Dynamic Quality Orchestrator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Peggie",
+        "last_name": "Roberts",
+        "job_title": "Forward Interactions Architect",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Shawna",
+        "last_name": "Stamm",
+        "job_title": "Senior Accountability Analyst",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Amelie",
+        "last_name": "Rice",
+        "job_title": "Lead Response Coordinator",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "6",
+        "first_name": "Autumn",
+        "last_name": "Rohan",
+        "job_title": "Forward Quality Architect",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Florencio",
+        "last_name": "Conroy",
+        "job_title": "Dynamic Integration Planner",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "4",
+        "first_name": "Courtney",
+        "last_name": "Lindgren",
+        "job_title": "District Branding Technician",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "3",
+        "first_name": "Peggie",
+        "last_name": "Windler",
+        "job_title": "Future Functionality Planner",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Alec",
+        "last_name": "Kub",
+        "job_title": "Dynamic Tactics Developer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "7",
+        "first_name": "Raoul",
+        "last_name": "Senger",
+        "job_title": "Global Integration Officer",
+        "is_supervisor": "0"
+    },
+    {
+        "department_id": "5",
+        "first_name": "Malachi",
+        "last_name": "D'Amore",
+        "job_title": "Direct Marketing Associate",
+        "is_supervisor": "0"
+    }
+]
