@@ -67,24 +67,21 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* To post a new product use the URL `product/new`
 	* To post a new object with the following keys:
 ```javascript
- {
- 	"title": "new info",
-	"price": new info,
-	"description": "new info",
-	"type_id": new info,
-	"seller_id": new info
-}
+{
+	"title":"Licensed Metal Chair",
+	"price":"736.00","description":"innovative unleash channels",
+	"type_id":9,"seller_id":8}
 ```
 * PUT
 	* To edit a new product use the URL `/products/:id/edit`
 	* Example keys:
 ```javascript
 {
-	"title": "Incredible Fresh Car",
-	"price": "655.00",
+	"title": "Incredible Fresh Bar",
+	"price": "600.00",
 	"description": "web-enabled productize experiences",
-	"type_id": 2,
-	"seller_id": 7
+	"type_id": 3,
+	"seller_id": 4
 }
 ```
 * DELETE
