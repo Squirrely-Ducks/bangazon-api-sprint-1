@@ -28,6 +28,22 @@ module.exports.get_one = (id) => {
     });
 };
 
+// method returning a promise that queries and selects a products belonging to an order from the database
+module.exports.get_order_prods = (id) => {
+    return new Promise((resolve, reject) => {
+        console.log(id, 'what');
+        db.all(`SELECT prod_id, title, price, description, type_id, seller_id
+        FROM order_product
+        JOIN product on product_id = prod_id
+        WHERE order_id="${id}"`,
+            (err, ord_prod) => {
+                if (err) return reject(err);
+                resolve(ord_prod)
+            });
+    });
+
+};
+
 // method that returns a promise that posts a new order to the data base
 module.exports.new_orders = ({ customer_id, payment_type_id, product_id, order_date, completed }) => {
     return new Promise((resolve, reject) => {
@@ -63,10 +79,11 @@ module.exports.update_order = (id, column, value) => {
 // method that returns a promise that deletes an order from the data base 
 module.exports.delete_order = (id) => {
     return new Promise((resolve, reject) => {
-            db.run(`DELETE FROM orders
+        db.run(`DELETE FROM orders
                 WHERE order_id = ${id}`,
             function (err, column) {
                 resolve(column);
             });
     });
 };
+

@@ -126,10 +126,12 @@ For the following resource verbs, Postman is recommended. Example data is provid
 * GET 
 	* To get all orders add the URL `/orders`
 * GET 
-	* To get a single order add the URL `orders/:id`
+	* To get a single orders add the URL `orders/:id`
+* GET 
+	* To get all products on a single order add the URL `orders/:id/products`
 * POST
-	* To get add a new order add the URL `order/new`
-	* To post a new order with the following keys:
+	* To get add a new orders add the URL `orders/new`
+	* To post a new orders with the following keys:
 ```javascript
 	"customer_id": 33,
 	"payment_type_id": 2,
