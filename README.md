@@ -262,10 +262,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * DELETE
-	* To delete a computer add the URL
-```javascript
-http://localhost:4200/api/v1/computer/:id/delete
-```
+	* To delete a computer add the URL `computer/:id/delete`
 
 ### TRAINING PROGRAMS
 * GET all training programs:
