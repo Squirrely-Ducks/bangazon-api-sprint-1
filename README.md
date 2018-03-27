@@ -98,9 +98,9 @@ For the following resource verbs, Postman is recommended. Example data is provid
     
 ```javascript
 { 
-	'customer_id': new info,
-	'type': new info,
-	'account_number': new info
+	"customer_id": 79,
+    	"type": 8,
+    	"account_number": 0
 }
 ```
 
@@ -140,7 +140,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* Example keys:
 ```javascript
 {
-"order_date": "right now",
+	"order_date": "2017-05-14T14:39:53.094Z",
 }
 ```
 	
@@ -242,9 +242,9 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* To post a new object with the following keys:
 ```javascript
 {
-	"${purchase_date}": new info,
-	"${trash_date}": new info,
-	${employee_id}): new info
+	"${purchase_date}": "2018-05-17T22:52:50.825Z",
+	"${trash_date}": "2019-05-17T21:52:50.825Z",
+	${employee_id}): 4
 }
 ```
 
