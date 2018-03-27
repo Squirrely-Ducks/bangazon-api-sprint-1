@@ -124,19 +124,33 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 ### ORDERS
 * GET 
-	* To get all orders add the URL 
+	* To get all orders add the URL `/orders`
 * GET 
-	* To get a single order add the URL
+	* To get a single order add the URL `orders/:id`
 * POST
-	* To get add a new order add the URL
+	* To get add a new order add the URL `order/new`
 	* To post a new order with the following keys:
-	
+```javascript
+	"customer_id": 33,
+	"payment_type_id": 2,
+	"product_id": 4,
+	"order_date": "2017-03-14T14:39:53.094Z",
+	"completed": 1
+```
+
 * PUT
-	* To edit an order add the URL
+	* To edit an order add the URL `order/:id/edit`
 	* Example keys:
+```javascript
+{
+"order_date": "right now",
+}
+```
 	
 * DELETE
-	* To delete an order add the URL
+	* To delete an order add the URL: `order/:id/delete`
+
+
 
 ### PRODUCT TYPE
 * GET all product types
