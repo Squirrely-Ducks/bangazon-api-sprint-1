@@ -131,7 +131,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* To get all products on a single order add the URL `orders/:id/products`
 * POST
 	* To get add a new orders add the URL `orders/new`
-	* To post a new orders with the following keys:
+	* To post a new order with the following keys:
 ```javascript
 	"customer_id": 33,
 	"payment_type_id": 2,
@@ -141,7 +141,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```
 
 * PUT
-	* To edit an order add the URL `order/:id/edit`
+	* To edit an order add the URL `orders/:id/edit`
 	* Example keys:
 ```javascript
 {
@@ -150,7 +150,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```
 	
 * DELETE
-	* To delete an order add the URL: `order/:id/delete`
+	* To delete an order add the URL: `orders/:id/delete`
 
 
 
