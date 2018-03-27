@@ -1,32 +1,48 @@
 # Bangazon API
-    Welcome to the Bangazon Corporation API. The purpose of the API is to allow the user to GET/POST/PUT/DELETE from the Banagazon Database. Instructions below are required before the API can be initialized and accessed.
+
+Welcome to the Bangazon Corporation API! Users can utilize GET/POST/PUT/DELETE commands for interaction with the Banagazon Database. This node.js application runs on an express framework to interact with an SQLite database. All necessary npms can be initialized by following the instructions below.
 
 ## Steps for Installation:
 In your terminal enter the following commands to gain access to the BangazonCorp API:
-1. ``` git clone https://github.com/Squirrely-Ducks/bangazon-api-sprint-1.git ```
-2. ``` npm init -y ```
->Initialize Node Packet Manager
-3. ``` npm install ```
->Installs all the Node Packets that are required as dependancies in the package.json file.
-Your environment is now set up run the BangazonCorp API
+* ``` git clone https://github.com/Squirrely-Ducks/bangazon-api-sprint-1.git ```
+>To initialize the node packet manager:
+* ``` npm init -y ```
+>To install all required node packet dependancies"
+* ``` npm install ```
+
 
 ## Initializing and Seeding the BangazonCorp Database
-As it stands, the database will be hosted locally on you machine.
-In order to initialize and seed the database you will need to enter a few simple commands. In your terminal, enter the following commands:
-    1. ` node data/execute_data.js `
-    >This will create all the necessary JSON files with randomized data to get you started
-    2. ` node db/build_db.js `
-    >This will insert the randomized data into the SQLite DataBase
+The database will be hosted locally on you machine. It can intialized and seeded with the following commands:
+>To create all the necessary JSON files with randomized data:
+* ``` node data/execute_data.js ```
+>To insert the randomized data into the SQLite DataBase:
+* ``` node db/build_db.js ```
+
+Your environment is now set up run the BangazonCorp API
+
 ## Usage of API
-As of now, all calls to the BangazonCorp API will be from `http://localhost:4200/api/v1/`
-To begin enter the following command to initialize the server `nodemon app.js`
+>All calls to the BangazonCorp API will be from:
+```javascript
+http://localhost:4200/api/v1/
+```
+>To begin enter the following command line into the terminal to initialize the server:
+```javascript
+nodemon app.js
+```
+
+For the following resource verbs, Postman is recommended. Example data is provided where needed.
+
 ### CUSTOMERS
 * GET all customers
-    ** To get all customers add `customers` to the URL
+    * To get all customers add the URL `customers`
 * GET single customer
-    ** To get a single customer add `customers/:id` to the URL
+    * To get a single customer add the URL `customers/:id` 
 * POST
-    ** To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
+    * To post a new product, use the URL `product/new` 
+    
+    * Example data keys:
+ ```javascript
+ {
 	                    "first_name":"Griffin",
 	                    "last_name":"Door",
 	                    "street":"97885 Hog",
@@ -37,76 +53,187 @@ To begin enter the following command to initialize the server `nodemon app.js`
 	                    "email":"Deontae_Grady@hotmail.com",
 	                    "acct_date":"2017-09-01T23:55:27.777Z",
 	                    "active": 0
-                        }
+  }
+  ```
 * PUT
+	* To Edit 
 
 ### PRODUCTS
 * GET all products
-    * To access all products enter address `/products`
+	* To access all products add the url `/products`
 * GET single product by product_id
-    * To access a single product by product_ID `/products/:id`
+	* To access a single product by a product id add the url `/products/:id`
 * POST
-    * To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:```{
-                                "title": "new info",
-                                "price": new info,
-                                "description": "new info",
-                                "type_id": new info,
-                                "seller_id": new info
-                            }```
+	* To post a new product use the URL `product/new`
+	* To post a new object with the following keys:
+```javascript
+ {
+ 	"title": "new info",
+	"price": new info,
+	"description": "new info",
+	"type_id": new info,
+	"seller_id": new info
+}
+```
 * PUT
+	* To edit a new product use the URL `/products/:id/edit`
+	* Example keys:
+```javascript
+{
+	"title": "Incredible Fresh Car",
+	"price": "655.00",
+	"description": "web-enabled productize experiences",
+	"type_id": 2,
+	"seller_id": 7
+}
+```
 * DELETE
-
+	* to delete a product use the URL `/products/:id/delete`
+	
 ### PAYMENT TYPE
 * GET all payment types
-    * To get all customers add `/payment` to the URL
+    * To get all customers add the URL `/payment`  
 * GET single payment type by type ID
-    * To get a single payment type add `/payment/type/:id` to the URL
+    * To get a single payment type add the URL`/payment/type/:id`  
 * GET single payment type by customer ID
-    * To get a single payment type add `/payment/customer/:id` to the URL
+    * To get a single payment type add the URL `/payment/customer/:id` 
 * POST
-    * To post a new payment type, use the URL(in Postman or something similar) `/payment/new` to post a new object with the following keys:```{ 
-                                'customer_id': new info,
-                                'type': new info,
-                                'account_number': new info
-                            }```
+    * To post a new payment type, add the URL(in Postman or something similar) `/payment/new`
+    * To post a new object with the following keys:
+    
+```javascript
+{ 
+	'customer_id': new info,
+	'type': new info,
+	'account_number': new info
+}
+```
+
 * PUT
+	* To edit a payment type add the URL `/payment/:id/edit`
+	* Example keys:
+```javascript
+{
+	"customer_id": 59,
+    	"type": 5,
+    	"account_number": 1
+}
+```
 * DELETE
+	* To delete a payment type add the URL `/payment/delete/:id`
 
 ### ORDERS
-* GET all orders
-* GET single order
+* GET 
+	* To get all orders add the URL `/orders`
+* GET 
+	* To get a single order add the URL `orders/:id`
 * POST
+	* To get add a new order add the URL `order/new`
+	* To post a new order with the following keys:
+```javascript
+	"customer_id": 33,
+	"payment_type_id": 2,
+	"product_id": 4,
+	"order_date": "2017-03-14T14:39:53.094Z",
+	"completed": 1
+```
+
 * PUT
+	* To edit an order add the URL `order/:id/edit`
+	* Example keys:
+```javascript
+{
+"order_date": "right now",
+}
+```
+	
 * DELETE
+	* To delete an order add the URL: `order/:id/delete`
+
+
 
 ### PRODUCT TYPE
 * GET all product types
+	* To get all prouct types add the URl `/prodType/all` 
 * GET single product types
+	* To get single product types add the URL `/prodType/:id`
 * POST
+	* To add a product type add the URL `/prodType/new`
+	* To post a new product type with the following key:
+```javascript
+{
+	"type":"Cookies"
+}
+```
 * PUT
+	* To edit a product type add the URL `/prodType/edit/:id`
+	* Example keys:
+```javascript
+{
+	"type":" Gravy"
+}
+```
+	
 * DELETE
-
+	* To edit a product type use the URL `/prodType/delete/:id`
+	
 ### EMPLOYEES
 * GET all employees
-    ** To get all customers add `/employees` to the URL
+    * To get all employees add the URL`/employees`
 * GET single employee
-    * To get a single customer by id add `/employees/:id` to the URL
+    * To get a single employee by id add the URL `/employees/:id`
 * POST
-    * To post a new product, use the URL(in Postman or something similar) `product/new` to post a new object with the following keys:{
-                                "deparment_id": new info,
-                                "first_name": "new info",
-                                "last_name": "new info",
-                                "job_title": "new info",
-                                "is_supervisor": new info
-                            }
+    * To post a new employee, add the URL `product/new`
+    * To post a new employee with the following keys:
+```javascript
+ {
+	"department_id": "1",
+ 	"first_name": "Greta",
+	"last_name": "Schoen",
+	"job_title": "Future Applications Orchestrator",
+	"is_supervisor": "0"
+}
+```
 * PUT
+	* To edit an employee add the the URL `/employees/:id/edit`
+	* Example keys:
+```javascript
+ {
+	"department_id": "1",
+ 	"first_name": "Greta",
+	"last_name": "Schoen",
+	"job_title": "Future Applications Orchestrator",
+	"is_supervisor": "1"
+}
+```
 
 ### DEPARTMENTS
 * GET all departments
-* GET single departments
+	* To get a single department add the URL `/departments`
+* GET 
+	* To get a single department add the URL `/departments/:id`
+* GET 
+	* To get a department by supervisor add the URL `/departments/:id/employees`
 * POST
+	* To add a new department add the URL `/departments/new`
+	* To post a new department with the following keys:
+```javascript
+{
+	"dept_name": "payment Investor",
+        "budget": 26330,
+        "supervisor_id": 2
+}
+```
 * PUT
-
+	* To edit a department add the URL `/departments/:id/edit`
+	* Example Keys:
+```javascript
+{
+	"dept_name": "payment Investor",
+        "budget": 26330,
+        "supervisor_id": 5
+}
+```
 
 ### COMPUTERS
 * GET all computers
@@ -114,18 +241,19 @@ To begin enter the following command to initialize the server `nodemon app.js`
 * GET single computers
 	* To get single computer by id add `/computer/:id` to the URL
 * POST
-	* To post a new computer use the URL(in Postman or something similar) `computer/new` to post a new object with the following keys:{
-                               "${purchase_date}": new info,
-           			"${trash_date}": new info,
-            			${employee_id}): new info
-                            }
-* PUT
-	* To edit a computer's info:
-	1. Edit program information, choose desired training program id and use the following path:
+	* To post a new computer use the URL`computer/new` 
+	* To post a new object with the following keys:
 ```javascript
-http://localhost:4200/api/v1/computer/:id/edit
+{
+	"${purchase_date}": new info,
+	"${trash_date}": new info,
+	${employee_id}): new info
+}
 ```
-- Enter into the body, any or all of the following values you would like to edit. Dummy data for example
+
+* PUT
+	* To edit a computer add the URL `/computer/:id/edit`
+	* Example keys:
 ```javascript
 {
 	"${purchase_date}": "2018-05-17T22:52:50.825Z",
@@ -134,51 +262,28 @@ http://localhost:4200/api/v1/computer/:id/edit
 }
 ```
 * DELETE
-	* To delete a computer, choose desired computer id and enter the following link into Postman with select id:
+	* To delete a computer add the URL
 ```javascript
 http://localhost:4200/api/v1/computer/:id/delete
 ```
 
 ### TRAINING PROGRAMS
-#### GET all training programs:
-1. To get list of all training programs:
-```javascript
-http://localhost:4200/api/v1/training_programs/:id
-```
+* GET all training programs:
+	* To get list of all training programs add the URL `/training_programs/:id`
+* GET all training programs with enrolled employees:
+	* To get list of enrolled employess add the URL `/training_programs/employees`
+* GET single training program
+	* To get one training program add the URL: `/training_programs/:id`
+* GET one training program with enrolled employees:
+	* To get a single program's enrolled employees add the URL `/training_programs/program/:id`
+*If null is returned, program does not have enrolled employees.*
+*  GET one employee's training programs 
+	* To get list of enrolled training programs by one employee add the URL `/training_programs/program/:id`
+*If null is returned, employee has not enrolled in training programs.*
 
-2. To get list of training programs with enrolled employees:
-```javascript
-http://localhost:4200/api/v1/training_programs/employees
-```
-
-#### GET single training program
-1. To get one training program:
-```javascript
-http://localhost:4200/api/v1/training_programs/:id
-```
-
-2. To get one training program with enrolled employees:
-```javascript
-http://localhost:4200/api/v1/training_programs/program/:id
-```
-If null is returned, program does not have enrolled employees.
-
-3. To get list of enrolled training programs by one employee:
-```javascript
-http://localhost:4200/api/v1/training_programs/program/:id
-```
-If null is returned, employee has not enrolled in training programs.
-
-* POST
-* PUT
-* DELETE(only if date is in future)
-
-#### POST new training program
-1. To add a new program, use the following path:
-```javascript
-http://localhost:4200/api/v1/training_programs/new
-```
-- Enter data into the body, for example:
+* POST new training program
+	* To add a new program add the URL `/training_programs/new`
+	* To Enter data into the body, for example:
 ```javascript
 {
 	"name": "Whats a computer 101?",
@@ -187,15 +292,10 @@ http://localhost:4200/api/v1/training_programs/new
 	"capacity": 20
 }
 ```
-- Check database, if program has been posted.
 
-#### PUT edit training program
-
-1. Edit program information, choose desired training program id and use the following path:
-```javascript
-http://localhost:4200/api/v1/training_programs/:id/edit
-```
-- Enter into the body, any or all of the following values you would like to edit. Dummy data for example
+* PUT 
+	* To edit training program add the URL `/training_programs/:id/edit`
+	* Example keys
 ```javascript
 {
 	"name": "Whats a comp?",
@@ -204,15 +304,10 @@ http://localhost:4200/api/v1/training_programs/:id/edit
 	"capacity": 10
 }
 ```
-- Check database to see if data has updated
 
 #### DELETE a training program
-
-4. To delete training programs,  choose desired training program id and enter the following link into Postman with select id:
-```javascript
-http://localhost:4200/api/v1/training_programs/:id/delete
-```
-- Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.
+	*  To delete training programs add the URL `training_programs/:id/delete`
+*Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.*
 
 
 
