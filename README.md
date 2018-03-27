@@ -302,8 +302,8 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 
-#### DELETE a training program
-	*  To delete training programs add the URL `training_programs/:id/delete`
+* DELETE a training program
+	* To delete training programs add the URL `training_programs/:id/delete`
 *Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.*
 
 
