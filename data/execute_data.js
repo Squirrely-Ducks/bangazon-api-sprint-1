@@ -15,7 +15,7 @@ const {execute_order_product_data }= require('./order_product/build_order_produc
 execute_prod_data();
 execute_cust_data();
 execute_train_data();
-// execute_computer_data();
+execute_computer_data();
 execute_department_data();
 execute_employee_data();
 execute_prod_type_data();
