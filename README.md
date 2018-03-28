@@ -38,7 +38,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 * GET single customer
     * To get a single customer add the URL `customers/:id` 
 * POST
-    * To post a new product, use the URL `product/new` 
+    * To post a new product, use the URL `customers/new` 
     
     * Example data keys:
  ```javascript
@@ -176,11 +176,11 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	
 ### EMPLOYEES
 * GET all employees
-    * To get all employees add the URL`/employees`
+    * To get all employees add the URL`/employee`
 * GET single employee
-    * To get a single employee by id add the URL `/employees/:id`
+    * To get a single employee by id add the URL `/employee/:id`
 * POST
-    * To post a new employee, add the URL `product/new`
+    * To post a new employee, add the URL `employee/new`
     * To post a new employee with the following keys:
 ```javascript
  {
