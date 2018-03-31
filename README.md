@@ -40,7 +40,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 * GET single customer
     * To get a single customer add the URL `customers/:id` 
 * POST
-    * To post a new product, use the URL `customers/new` 
+    * To post a new customer, use the URL `customers/new` 
     * Example  keys:
  ```javascript
  {
