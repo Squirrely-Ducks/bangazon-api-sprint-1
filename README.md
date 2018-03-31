@@ -35,8 +35,8 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ### CUSTOMERS
 * GET all customers
     * To get all customers use the URL `customers`
-* GET all customers who are inactive
-    * To get all customers use the URL `customers?inactive=true`
+* GET all inactive customers
+    * To get all customers who are inactive use the URL `customers?inactive=true`
 * GET single customer by customer ID
     * To get a single customer use the URL `customers/:id` 
 * POST
@@ -115,7 +115,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 ### ORDERS
 
-* GET orders
+* GET all orders
 	* To get all orders use the URL `/orders`
 * GET single order by order ID
 	* To get a single order with its products use the URL `orders/:id`
