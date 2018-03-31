@@ -34,13 +34,13 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 ### CUSTOMERS
 * GET all customers
-    * To get all customers use the URL `customers`
+    * To get all customers use the URL `/customers`
 * GET all inactive customers
-    * To get all customers who are inactive use the URL `customers?inactive=true`
+    * To get all customers who are inactive use the URL `/customers?inactive=true`
 * GET single customer by customer ID
-    * To get a single customer use the URL `customers/:id` 
+    * To get a single customer use the URL `/customers/:id` 
 * POST
-    * To post a new customer use the URL `customers/new` 
+    * To post a new customer use the URL `/customers/new` 
     * Example  keys:
 ```javascript
 {
@@ -67,7 +67,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
     * Example keys:
 ```javascript
 {
-	"title": "Licensed Metal Chair",
+    "title": "Licensed Metal Chair",
     "price": "736.00",
     "description": "innovative unleash channels",
     "type_id": 9,
@@ -119,9 +119,9 @@ For the following resource verbs, Postman is recommended. Example data is provid
 * GET all orders
 	* To get all orders use the URL `/orders`
 * GET single order by order ID
-	* To get a single order with its products use the URL `orders/:id`
+	* To get a single order with its products use the URL `/orders/:id`
 * POST
-	* To post a new order use the URL `orders/new`
+	* To post a new order use the URL `/orders/new`
     * Example keys:
 ```javascript
 {
@@ -132,7 +132,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit an order use the URL `orders/:id/edit`
+	* To edit an order use the URL `/orders/:id/edit`
 	* Example keys:
 ```javascript
 {
@@ -140,7 +140,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * DELETE
-	* To delete an order use the URL `orders/:id/delete`
+	* To delete an order use the URL `/orders/:id/delete`
 
 ### PRODUCT TYPE
 * GET all product types
@@ -184,7 +184,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit an employee add the the URL `/employees/:id/edit`
+	* To edit an employee use the the URL `/employees/:id/edit`
     * Example  keys:
 ```javascript
 {
