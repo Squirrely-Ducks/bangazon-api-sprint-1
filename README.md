@@ -99,7 +99,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```javascript
 { 
 	"customer_id": 1,
-	"type": 8,
+    "type": 8,
     "account_number": 0
 }
 ```
@@ -127,7 +127,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 {
 	"customer_id": 33,
 	"payment_type_id": 2,
-	"order_date": "2017-03-14T14:39:53.094Z",
+    "order_date": "2017-03-14T14:39:53.094Z",
     "completed": 1
 }
 ```
@@ -160,7 +160,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* Example keys:
 ```javascript
 {
-	"type":"Crackers"
+	"type":"Gravy"
 }
 ```
 	
@@ -177,9 +177,9 @@ For the following resource verbs, Postman is recommended. Example data is provid
     * Example  keys:
 ```javascript
 {
-	"department_id": "1",
+    "department_id": "1",
     "first_name": "Greta",
-	"last_name": "Schoen",
+    "last_name": "Schoen",
     "job_title": "Future Applications Orchestrator"
 }
 ```
@@ -204,7 +204,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* Example  keys:
 ```javascript
 {
-	"dept_name": "payment Investor",
+    "dept_name": "payment Investor",
     "budget": 26330,
     "supervisor_id": 2
 }
@@ -226,7 +226,9 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* To get single computer use the URL `/computers/:id` 
 * POST
 	* To post a new computer use the URL `/computers/new` 
+
     *only employee id is needed, purchase date will be automatically set to now, and trash date to undefined*
+
 	* Example  keys:
 ```javascript
 {
@@ -253,9 +255,12 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* To get a single training program use the URL: `/training_programs/:id`
 * GET single training program with enrolled employees by training program ID
 	* To get a single program with enrolled employees use the URL `/training_programs/program/:id`
+
 *If null is returned, program does not have enrolled employees.*
+
 *  GET single employee's training programs by employee ID
 	* To get the training programs in which a single employee has enrolled use the URL `/training_programs/employee/:employee_id`
+
 *If null is returned, employee has not enrolled in training programs.*
 
 * POST new training program
@@ -281,6 +286,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 * DELETE a training program
 	* To delete a training program use the URL `training_programs/:id/delete`
+    
 *Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.*
 
 
