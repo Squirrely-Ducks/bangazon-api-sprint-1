@@ -42,8 +42,8 @@ For the following resource verbs, Postman is recommended. Example data is provid
 * POST
     * To post a new customer use the URL `customers/new` 
     * Example  keys:
- ```javascript
- {
+```javascript
+{
     "first_name":"Griffin",
     "last_name":"Door",
     "street":"97885 Hog",
@@ -67,19 +67,20 @@ For the following resource verbs, Postman is recommended. Example data is provid
     * Example keys:
 ```javascript
 {
-    "title": "new info",
-	"price": 10000,
-	"description": "new info",
-	"type_id": 1,
-	"seller_id": 3
+	"title": "Licensed Metal Chair",
+    "price": "736.00",
+    "description": "innovative unleash channels",
+    "type_id": 9,
+    "seller_id": 8
 }
+
 ```
 * PUT
 	* To edit a product use the URL `/products/:id/edit`
 	* Example keys:
 ```javascript
 {
-	"title": "Incredible Fresh Car"
+    "title": "Incredible Fresh Car"
 }
 ```
 * DELETE
@@ -98,8 +99,8 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```javascript
 { 
 	"customer_id": 1,
-	"type": 3,
-	"account_number": 7
+	"type": 8,
+    "account_number": 0
 }
 ```
 * PUT
@@ -135,7 +136,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* Example keys:
 ```javascript
 {
-"order_date": "right now"
+    "order_date": "2017-05-14T14:39:53.094Z"
 }
 ```
 * DELETE
