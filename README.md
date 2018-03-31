@@ -34,13 +34,13 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 ### CUSTOMERS
 * GET all customers
-    * To get all customers add the URL `customers`
+    * To get all customers use the URL `customers`
 * GET all customers who are inactive
-    * To get all customers add the URL `customers?inactive=true`
-* GET single customer
-    * To get a single customer add the URL `customers/:id` 
+    * To get all customers use the URL `customers?inactive=true`
+* GET single customer by customer ID
+    * To get a single customer use the URL `customers/:id` 
 * POST
-    * To post a new customer, use the URL `customers/new` 
+    * To post a new customer use the URL `customers/new` 
     * Example  keys:
  ```javascript
  {
@@ -59,12 +59,12 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 ### PRODUCTS
 * GET all products
-	* To access all products add the url `/products`
-* GET single product by product_id
-	* To access a single product by a product id add the url `/products/:id`
+	* To get all products use the URL `/products`
+* GET single product by product ID
+	* To get a single product use the url `/products/:id`
 * POST
 	* To post a new product use the URL `products/new`
-    * Example  keys:
+    * Example keys:
 ```javascript
 {
     "title": "new info",
@@ -75,7 +75,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit a new product use the URL `/products/:id/edit`
+	* To edit a product use the URL `/products/:id/edit`
 	* Example keys:
 ```javascript
 {
@@ -87,13 +87,13 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	
 ### PAYMENT TYPE
 * GET all payment types
-    * To get all payment types add the URL `/payment`  
+    * To get all payment types use the URL `/payment`  
 * GET single payment type by type ID
-    * To get a single payment type add the URL`/payment/type/:id`  
+    * To get a single payment type by type_id use the URL`/payment/type/:id`  
 * GET single payment type by customer ID
-    * To get a single payment type add the URL `/payment/customer/:customer_id` 
+    * To get a single payment type by customer_id use the URL `/payment/customer/:customer_id` 
 * POST
-    * To post a new payment type, add the URL `/payment/new`
+    * To post a new payment type use the URL `/payment/new`
 	* Example keys:
 ```javascript
 { 
@@ -103,7 +103,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit a payment type add the URL `/payment/:id/edit`
+	* To edit a payment type use the URL `/payment/:id/edit`
 	* Example keys:
 ```javascript
 {
@@ -111,16 +111,17 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * DELETE
-	* To delete a payment type add the URL `/payment/delete/:id`
+	* To delete a payment type use the URL `/payment/delete/:id`
 
 ### ORDERS
-* GET 
-	* To get all orders add the URL `/orders`
-* GET 
-	* To get a single order with its products add the URL `orders/:id`
+
+* GET orders
+	* To get all orders use the URL `/orders`
+* GET single order by order ID
+	* To get a single order with its products use the URL `orders/:id`
 * POST
-	* To get add a new orders add the URL `orders/new`
-    * Example  keys:
+	* To post a new order use the URL `orders/new`
+    * Example keys:
 ```javascript
 {
 	"customer_id": 33,
@@ -130,7 +131,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit an order add the URL `orders/:id/edit`
+	* To edit an order use the URL `orders/:id/edit`
 	* Example keys:
 ```javascript
 {
@@ -138,23 +139,23 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * DELETE
-	* To delete an order add the URL: `orders/:id/delete`
+	* To delete an order use the URL `orders/:id/delete`
 
 ### PRODUCT TYPE
 * GET all product types
-	* To get all product types add the URl `/prodtype/all` 
-* GET single product types
-	* To get single product types add the URL `/prodtype/:id`
+	* To get all product types use the URL `/prodtype/all` 
+* GET single product type by type ID
+	* To get a single product type use the URL `/prodtype/:id`
 * POST
-	* To add a product type add the URL `/prodtype/new`
-    * Example  keys:
+	* To post a new product type use the URL `/prodtype/new`
+    * Example keys:
 ```javascript
 {
 	"type":"Cookies"
 }
 ```
 * PUT
-	* To edit a product type add the URL `/prodtype/edit/:id`
+	* To edit a product type use the URL `/prodtype/edit/:id`
 	* Example keys:
 ```javascript
 {
@@ -163,15 +164,15 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```
 	
 * DELETE
-	* To edit a product type use the URL `/prodtype/delete/:id`
+	* To delete a product type use the URL `/prodtype/delete/:id`
 	
 ### EMPLOYEES
 * GET all employees
     * To get all employees add the URL`/employees`
-* GET single employee
-    * To get a single employee by id add the URL `/employees/:id`
+* GET single employee by employee ID
+    * To get a single employee use the URL `/employees/:id`
 * POST
-    * To post a new employee with the following keys:
+    * To post a new employee use the URL `/employees/new`
     * Example  keys:
 ```javascript
 {
@@ -192,13 +193,13 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 ### DEPARTMENTS
 * GET all departments
-	* To get a single department add the URL `/departments`
-* GET 
-	* To get a single department add the URL `/departments/:id`
-* GET 
-	* To get a department by supervisor add the URL `/departments/:id/employees`
+	* To get all departments use the URL `/departments`
+* GET single department by department ID
+	* To get a single department use the URL `/departments/:id`
+* GET department employees by department ID
+	* To get a department's employees use the url`/departments/:id/employees`
 * POST
-	* To add a new department add the URL `/departments/new`
+	* To post a new department use the URL `/departments/new`
 	* Example  keys:
 ```javascript
 {
@@ -208,7 +209,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit a department add the URL `/departments/:id/edit`
+	* To edit a department use the URL `/departments/:id/edit`
 	* Example Keys:
 ```javascript
 {
@@ -217,13 +218,13 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```
 ### COMPUTERS
 * GET all computers
-	* To get all computers add to the URL `/computers` 
+	* To get all computers use the URL `/computers` 
 * GET all active computers
-	* To get all computers add to the URL  `/computers?active=true`  
-* GET single computers
-	* To get single computer by id add to the URL `/computers/:id` 
+	* To get all active computers use the URL  `/computers?active=true`  
+* GET single computer by computer ID
+	* To get single computer use the URL `/computers/:id` 
 * POST
-	* To post a new computer use the URL`computers/new` 
+	* To post a new computer use the URL `/computers/new` 
     *only employee id is needed, purchase date will be automatically set to now, and trash date to undefined*
 	* Example  keys:
 ```javascript
@@ -232,7 +233,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT
-	* To edit a computer add the URL `/computers/:id/edit`
+	* To edit a computer use the URL `/computers/:id/edit`
 	* Example keys:
 ```javascript
 {
@@ -240,24 +241,24 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * DELETE
-	* To delete a computer add the URL `computers/:id/delete`
+	* To delete a computer use the URL `computers/:id/delete`
 
 ### TRAINING PROGRAMS
 * GET all training programs:
-	* To get list of all training programs add the URL `/training_programs/`
+	* To get all training programs use the URL `/training_programs`
 * GET all training programs with enrolled employees:
-	* To get list of enrolled employess add the URL `/training_programs/employees`
-* GET single training program
-	* To get one training program add the URL: `/training_programs/:id`
-* GET one training program with enrolled employees:
-	* To get a single program's enrolled employees add the URL `/training_programs/program/:id`
+	* To get list of enrolled employees use the URL `/training_programs/employees`
+* GET single training program by training program ID
+	* To get a single training program use the URL: `/training_programs/:id`
+* GET single training program with enrolled employees by training program ID
+	* To get a single program with enrolled employees use the URL `/training_programs/program/:id`
 *If null is returned, program does not have enrolled employees.*
-*  GET one employee's training programs 
-	* To get list of enrolled training programs by one employee add the URL `/training_programs/employee/:employee_id`
+*  GET single employee's training programs by employee ID
+	* To get the training programs in which a single employee has enrolled use the URL `/training_programs/employee/:employee_id`
 *If null is returned, employee has not enrolled in training programs.*
 
 * POST new training program
-	* To add a new program add the URL `/training_programs/new`
+	* To post a new program use the URL `/training_programs/new`
 	* Example keys:
 ```javascript
 {
@@ -268,7 +269,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 }
 ```
 * PUT 
-	* To edit training program add the URL `/training_programs/:id/edit`
+	* To edit a training program use the URL `/training_programs/:id/edit`
 	* Example keys
 ```javascript
 {
@@ -278,7 +279,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 ```
 
 * DELETE a training program
-	* To delete training programs add the URL `training_programs/:id/delete`
+	* To delete a training program use the URL `training_programs/:id/delete`
 *Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.*
 
 
