@@ -48,7 +48,7 @@ module.exports.new_orders = ({ customer_id, payment_type_id, product_id, order_d
                 resolve(order, this.lastID)
             });
     });
-}; ''
+};
 
 // method that returns a promise that puts a new order to the data base
 module.exports.update_order = (id, column, value) => {
