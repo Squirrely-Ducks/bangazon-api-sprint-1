@@ -13,7 +13,7 @@ module.exports.build_cust_table = () => {
     db.run(`DROP TABLE IF EXISTS customer`);
     db.run(
       `CREATE TABLE IF NOT EXISTS customer (
-      cust_id INTEGER PRIMARY KEY,
+      customer_id INTEGER PRIMARY KEY,
       first_name TEXT,
       last_name TEXT,
       street TEXT,

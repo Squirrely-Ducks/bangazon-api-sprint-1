@@ -16,7 +16,7 @@ module.exports.get_one = (id) => {
     return new Promise((resolve, reject) => {
         db.get(`SELECT dept_id, dept_name, budget, (employee.first_name || " "|| employee.last_name) as supervisor  
         FROM department
-        JOIN employee on supervisor_id = emp_id 
+        JOIN employee on supervisor_id = employee.employee_id 
         WHERE dept_id = "${id}"`,
             (err, dept) => {
                 if (err) return reject(err);
@@ -26,10 +26,10 @@ module.exports.get_one = (id) => {
 }
 module.exports.get_department_employees = (id) => {
     return new Promise((resolve, reject) => {
-        db.get(`SELECT dept_name, group_concat(employee.first_name || " "|| employee.last_name) as employees  
+        db.get(`SELECT dept_name, group_concat(employee.first_name || " " || employee.last_name, ", ") as employees  
         FROM department
         JOIN employee on department_id = dept_id
-        WHERE dept_id = "${id}" and supervisor_id != emp_id`,
+        WHERE dept_id = "${id}" and supervisor_id != employee.employee_id `,
             (err, dept) => {
                 if (err) return reject(err);
                 resolve(dept);

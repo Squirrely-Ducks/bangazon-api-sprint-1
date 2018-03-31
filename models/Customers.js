@@ -19,7 +19,7 @@ module.exports.get_one = (id) => {
         db.get(
             `SELECT *
             FROM customer
-            WHERE cust_id = "${id}"`,
+            WHERE customer_id = "${id}"`,
             (err, custy) => {
                 if (err) return reject(err);
                 resolve(custy);
