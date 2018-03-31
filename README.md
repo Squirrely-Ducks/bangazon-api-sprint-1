@@ -98,7 +98,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 	* Example keys:
 ```javascript
 { 
-	"customer_id": 1,
+    "customer_id": 1,
     "type": 8,
     "account_number": 0
 }
@@ -125,8 +125,8 @@ For the following resource verbs, Postman is recommended. Example data is provid
     * Example keys:
 ```javascript
 {
-	"customer_id": 33,
-	"payment_type_id": 2,
+    "customer_id": 33,
+    "payment_type_id": 2,
     "order_date": "2017-03-14T14:39:53.094Z",
     "completed": 1
 }
@@ -286,7 +286,7 @@ For the following resource verbs, Postman is recommended. Example data is provid
 
 * DELETE a training program
 	* To delete a training program use the URL `training_programs/:id/delete`
-    
+
 *Will only delete program if its start date has not passed. Double check that selected program id has a start date in the future.*
 
 
