@@ -13,11 +13,9 @@ module.exports.build_order_table = () => {
         (order_id INTEGER PRIMARY KEY,
         customer_id INT,
         payment_type_id INT, 
-        product_id INT,
         order_date TEXT, 
         completed INT,
         FOREIGN KEY (customer_id) REFERENCES customer (customer_id),
-        FOREIGN KEY (product_id) REFERENCES product (product_id) ,
         FOREIGN KEY (payment_type_id) REFERENCES payment_type (type_id)) `,
             () => {
                 resolve("done");
@@ -28,13 +26,12 @@ module.exports.build_order_table = () => {
 //insert data into table
 module.exports.insert_order_data = () => {
     return new Promise((resolve, reject) => {
-        order_data.forEach(({ customer_id, payment_type_id, product_id, order_date, completed }) => {
+        order_data.forEach(({ customer_id, payment_type_id, order_date, completed }) => {
             db.run(
                 `INSERT INTO orders
         VALUES (${null}, 
           ${customer_id}, 
           ${payment_type_id}, 
-          ${product_id}, 
           "${order_date}", 
           ${completed})`,
                 () => {

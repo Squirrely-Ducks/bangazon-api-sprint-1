@@ -15,7 +15,7 @@ module.exports.get_one = (id) => {
     return new Promise((resolve, reject) => {
         db.get(`SELECT computer.*, (employee.first_name|| " "|| employee.last_name) as owner
         FROM computer
-        JOIN employee ON emp_id = employee_id
+        JOIN employee ON employee.employee_id = computer.employee_id
         WHERE computer_id = "${id}"`,
             (err, comp) => {
                 if (err) return reject(err);

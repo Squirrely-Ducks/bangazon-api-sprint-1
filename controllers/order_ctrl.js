@@ -26,19 +26,6 @@ module.exports.get_one_order = (req, res, next) => {
         .catch((err) => next(err));
 };
 
-//get all products on one order
-module.exports.get_order_products = (req, res, next) => {
-    get_order_prods(req.params.id)
-        .then((order_products) => {
-            if (order_products) {
-                res.status(200).json(order_products);
-            } else {
-                let err = new Error(`404: There are no products on this order`);
-                next(err);
-            }
-        }).catch((err) => next(err));
-};
-
 // method requiring the new order method to post an order to the data base
 module.exports.add_order = (req, res, next) => {
     new_orders(req.body)

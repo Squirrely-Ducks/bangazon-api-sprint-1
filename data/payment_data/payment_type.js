@@ -8,8 +8,7 @@ module.exports.gen_pay_type = () => {
   let payment_type = [];
   
   for (let i = 0; i < 20; i++) {
-    // let payment_type_id = faker.commerce.product();
-    let customer_id  = Math.floor(Math.random() * 300) + 1;
+    let customer_id  = Math.floor(Math.random() * 11) + 1;
     let type = Math.floor(Math.random() * 5) + 1;
     let account_number = Math.floor(Math.random() * 10) + 1;
 

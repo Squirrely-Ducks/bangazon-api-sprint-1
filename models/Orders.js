@@ -14,33 +14,21 @@ module.exports.get_all = () => {
     });
 };
 
-// method returning a promise that queries and selects a single order from the data base
+// method returning a promise that queries and selects a single order and its products from the data base
 module.exports.get_one = (id) => {
     return new Promise((resolve, reject) => {
         db.get(
-            `SELECT *
-            FROM orders
-            WHERE order_id = "${id}" `,
+            `SELECT orders.order_id, customer_id, order_date, completed,
+            group_concat(product.title ||' '|| product.price||' '|| product.description||' '|| product.type_id||' '|| product.seller_id,"|") as Products
+            FROM order_product
+            JOIN orders ON orders.order_id = order_product.order_id
+            JOIN product on product.prod_id = order_product.product_id
+            WHERE orders.order_id = "${id}" `,
             (err, order) => {
                 if (err) return reject(err)
                 resolve(order)
             });
     });
-};
-
-// method returning a promise that queries and selects a products belonging to an order from the database
-module.exports.get_order_prods = (id) => {
-    return new Promise((resolve, reject) => {
-        db.all(`SELECT prod_id, title, price, description, type_id, seller_id
-        FROM order_product
-        JOIN product on product_id = prod_id
-        WHERE order_id="${id}"`,
-            (err, ord_prod) => {
-                if (err) return reject(err);
-                resolve(ord_prod)
-            });
-    });
-
 };
 
 // method that returns a promise that posts a new order to the data base
@@ -50,7 +38,6 @@ module.exports.new_orders = ({ customer_id, payment_type_id, product_id, order_d
             null,
             ${customer_id},
             ${payment_type_id},
-            ${product_id},
             "${order_date}",
             ${completed}) `, function (err, order) {
                 if (err) {

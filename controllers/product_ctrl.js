@@ -17,7 +17,7 @@ module.exports.get_one_product = (req, res, next ) => {
         if (product) {
             res.status(200).json(product);
         } else {
-            let err = new Error('404: customer not found');
+            let err = new Error('404: product not found');
             next(err)
         }
     })

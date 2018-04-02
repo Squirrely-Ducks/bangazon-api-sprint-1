@@ -13,8 +13,6 @@ trainingProgramRouter.get("/training_programs/:id", get_one_training_program);
 trainingProgramRouter.get("/training_programs/program/:id", get_one_training_employees);
 //GET ONE EMPLOYEE'S LIST OF TRAINING PROGRAMS
 trainingProgramRouter.get("/training_programs/employee/:id", get_employee_programs_list);
-//GET ONE EMPLOYEE'S
-trainingProgramRouter.post("/training_programs/new", add_training_program);
 //ADD TRAINING PROGRAM
 trainingProgramRouter.post("/training_programs/new", add_training_program);
 // EDIT TRAINING PROGRAM
